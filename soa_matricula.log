@@ -1,0 +1,614 @@
+2025-10-10 12:26:48,432 [WARNING][werkzeug]  * Debugger is active!
+2025-10-10 12:26:48,436 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-10 12:29:10,651 [INFO][werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-10 12:29:10,651 [INFO][werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-10 12:29:10,653 [INFO][werkzeug]  * Restarting with stat
+2025-10-10 12:29:11,093 [WARNING][werkzeug]  * Debugger is active!
+2025-10-10 12:29:11,097 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-10 12:31:13,636 [INFO][werkzeug] 127.0.0.1 - - [10/Oct/2025 12:31:13] "GET / HTTP/1.1" 200 -
+2025-10-10 12:31:13,945 [INFO][werkzeug] 127.0.0.1 - - [10/Oct/2025 12:31:13] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-10-10 12:31:14,825 [INFO][werkzeug] 127.0.0.1 - - [10/Oct/2025 12:31:14] "GET / HTTP/1.1" 200 -
+2025-10-10 12:31:14,903 [INFO][werkzeug] 127.0.0.1 - - [10/Oct/2025 12:31:14] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-10-10 12:31:15,461 [INFO][werkzeug] 127.0.0.1 - - [10/Oct/2025 12:31:15] "GET / HTTP/1.1" 200 -
+2025-10-10 12:31:15,543 [INFO][werkzeug] 127.0.0.1 - - [10/Oct/2025 12:31:15] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-10-10 12:31:36,852 [WARNING][root] [WARNING][estudiantes-service][POST] Campos obligatorios faltantes | IP:127.0.0.1 | Usuario:anon | Duración:0.424s
+2025-10-10 12:31:36,853 [INFO][werkzeug] 127.0.0.1 - - [10/Oct/2025 12:31:36] "[31m[1mPOST /api/estudiantes/ HTTP/1.1[0m" 400 -
+2025-10-10 12:32:19,489 [INFO][root] [INFO][estudiantes-service][POST] Estudiante Juan Pérez (74093841) registrado correctamente | IP:127.0.0.1 | Usuario:anon | Duración:0.0228s
+2025-10-10 12:32:19,492 [INFO][werkzeug] 127.0.0.1 - - [10/Oct/2025 12:32:19] "[35m[1mPOST /api/estudiantes/ HTTP/1.1[0m" 201 -
+2025-10-10 12:33:08,915 [ERROR][root] [ERROR][estudiantes-service][POST] Fallo al registrar estudiante 74093841: Código duplicado: 74093841 | IP:127.0.0.1 | Usuario:anon | Duración:0.0099s
+2025-10-10 12:33:08,916 [INFO][werkzeug] 127.0.0.1 - - [10/Oct/2025 12:33:08] "[35m[1mPOST /api/estudiantes/ HTTP/1.1[0m" 500 -
+2025-10-10 12:33:39,638 [INFO][root] [INFO][estudiantes-service][GET] Listar estudiantes correctamente | IP:127.0.0.1 | Usuario:anon | Duración:0.012s
+2025-10-10 12:33:39,640 [INFO][werkzeug] 127.0.0.1 - - [10/Oct/2025 12:33:39] "GET /api/estudiantes/ HTTP/1.1" 200 -
+2025-10-11 18:15:45,882 [INFO][werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-11 18:15:45,882 [INFO][werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-11 18:15:45,882 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 18:15:46,329 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 18:15:46,332 [INFO][werkzeug]  * Debugger PIN: 143-426-037
+2025-10-11 18:52:03,899 [INFO][werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-11 18:52:03,903 [INFO][werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-11 18:52:03,909 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 18:52:04,556 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 18:52:04,561 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 18:53:21,841 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 18:53:22,263 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 18:53:22] "[35m[1mPOST /api/estudiantes/ HTTP/1.1[0m" 500 -
+2025-10-11 18:57:05,121 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 18:57:05] "GET / HTTP/1.1" 200 -
+2025-10-11 18:57:05,385 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 18:57:05,431 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 18:57:05] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-10-11 18:58:55,841 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 18:58:55,859 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 18:58:55] "[35m[1mGET /api/v1 HTTP/1.1[0m" 500 -
+2025-10-11 18:58:56,105 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 18:58:56,136 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 18:58:56] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-10-11 18:59:48,095 [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][POST] Código duplicado: 74093841 | IP:127.0.0.1 | User:admin | t:0.017s
+2025-10-11 18:59:48,106 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 18:59:48] "[31m[1mPOST /api/v1/estudiantes/ HTTP/1.1[0m" 400 -
+2025-10-11 19:00:15,815 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][POST] Estudiante Miguelllll (15926345) registrado correctamente | IP:127.0.0.1 | User:admin | t:0.0101s
+2025-10-11 19:00:15,822 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:00:15] "[35m[1mPOST /api/v1/estudiantes/ HTTP/1.1[0m" 201 -
+2025-10-11 19:00:23,086 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Listado de 2 estudiantes recuperado correctamente | IP:127.0.0.1 | User:admin | t:0.0052s
+2025-10-11 19:00:23,093 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:00:23] "GET /api/v1/estudiantes/ HTTP/1.1" 200 -
+2025-10-11 19:00:56,021 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:00:56,026 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:00:56] "[35m[1mDELETE /api/v1/estudiantes/ HTTP/1.1[0m" 500 -
+2025-10-11 19:01:01,511 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][DELETE] Estudiante ID 1 eliminado correctamente | IP:127.0.0.1 | User:admin | t:0.0121s
+2025-10-11 19:01:01,519 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:01:01] "DELETE /api/v1/estudiantes/1 HTTP/1.1" 200 -
+2025-10-11 19:01:07,408 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Listado de 1 estudiantes recuperado correctamente | IP:127.0.0.1 | User:admin | t:0.0044s
+2025-10-11 19:01:07,428 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:01:07] "GET /api/v1/estudiantes/ HTTP/1.1" 200 -
+2025-10-11 19:01:15,978 [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][DELETE] Estudiante ID 1 no encontrado | IP:127.0.0.1 | User:admin | t:0.003s
+2025-10-11 19:01:15,984 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:01:15] "[33mDELETE /api/v1/estudiantes/1 HTTP/1.1[0m" 404 -
+2025-10-11 19:01:20,756 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][DELETE] Estudiante ID 2 eliminado correctamente | IP:127.0.0.1 | User:admin | t:0.0164s
+2025-10-11 19:01:20,765 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:01:20] "DELETE /api/v1/estudiantes/2 HTTP/1.1" 200 -
+2025-10-11 19:01:24,924 [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Estudiante 2 no encontrado | IP:127.0.0.1 | User:admin | t:0.0043s
+2025-10-11 19:01:24,946 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:01:24] "[33mGET /api/v1/estudiantes/2 HTTP/1.1[0m" 404 -
+2025-10-11 19:01:28,378 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Listado de 0 estudiantes recuperado correctamente | IP:127.0.0.1 | User:admin | t:0.005s
+2025-10-11 19:01:28,398 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:01:28] "GET /api/v1/estudiantes/ HTTP/1.1" 200 -
+2025-10-11 19:01:37,541 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Listado de 0 estudiantes recuperado correctamente | IP:127.0.0.1 | User:admin | t:0.0035s
+2025-10-11 19:01:37,553 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:01:37] "GET /api/v1/estudiantes/ HTTP/1.1" 200 -
+2025-10-11 19:01:42,305 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][POST] Estudiante Miguelllll (15926345) registrado correctamente | IP:127.0.0.1 | User:admin | t:0.0067s
+2025-10-11 19:01:42,319 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:01:42] "[35m[1mPOST /api/v1/estudiantes/ HTTP/1.1[0m" 201 -
+2025-10-11 19:01:54,133 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Consulta de estudiante 15926345 exitosa | IP:127.0.0.1 | User:admin | t:0.0041s
+2025-10-11 19:01:54,155 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:01:54] "GET /api/v1/estudiantes/15926345 HTTP/1.1" 200 -
+2025-10-11 19:02:31,938 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:02:31] "[32mPOST /api/v1/cursos HTTP/1.1[0m" 308 -
+2025-10-11 19:02:31,952 [ERROR][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [ERROR][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][POST] Error al crear curso CS202: 1054 (42S22): Unknown column 'ciclo' in 'field list' | IP:127.0.0.1 | User:admin | t:0.008s
+2025-10-11 19:02:31,958 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:02:31] "[35m[1mPOST /api/v1/cursos/ HTTP/1.1[0m" 500 -
+2025-10-11 19:02:38,985 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:02:38] "[32mGET /api/v1/cursos HTTP/1.1[0m" 308 -
+2025-10-11 19:02:38,998 [ERROR][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [ERROR][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][GET] Error al listar cursos: 1054 (42S22): Unknown column 'ciclo' in 'field list' | IP:127.0.0.1 | User:admin | t:0.0055s
+2025-10-11 19:02:39,017 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:02:39] "[35m[1mGET /api/v1/cursos/ HTTP/1.1[0m" 500 -
+2025-10-11 19:02:42,142 [ERROR][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [ERROR][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][GET] Error al listar cursos: 1054 (42S22): Unknown column 'ciclo' in 'field list' | IP:127.0.0.1 | User:admin | t:0.0071s
+2025-10-11 19:02:42,152 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:02:42] "[35m[1mGET /api/v1/cursos/ HTTP/1.1[0m" 500 -
+2025-10-11 19:02:54,786 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:02:54] "[32mGET /api/v1/cursos HTTP/1.1[0m" 308 -
+2025-10-11 19:02:54,806 [ERROR][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [ERROR][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][GET] Error al listar cursos: 1054 (42S22): Unknown column 'ciclo' in 'field list' | IP:127.0.0.1 | User:admin | t:0.008s
+2025-10-11 19:02:54,814 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:02:54] "[35m[1mGET /api/v1/cursos/ HTTP/1.1[0m" 500 -
+2025-10-11 19:03:17,343 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:03:17] "[32mGET /api/v1/estudiantes HTTP/1.1[0m" 308 -
+2025-10-11 19:03:17,378 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Listado de 1 estudiantes recuperado correctamente | IP:127.0.0.1 | User:anon | t:0.0041s
+2025-10-11 19:03:17,393 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:03:17] "GET /api/v1/estudiantes/ HTTP/1.1" 200 -
+2025-10-11 19:03:17,538 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 19:03:17,550 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:03:17] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-10-11 19:03:54,250 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:03:54] "[32mGET /api/v1/cursos HTTP/1.1[0m" 308 -
+2025-10-11 19:03:54,264 [ERROR][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [ERROR][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][GET] Error al listar cursos: 1054 (42S22): Unknown column 'ciclo' in 'field list' | IP:127.0.0.1 | User:admin | t:0.0051s
+2025-10-11 19:03:54,288 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:03:54] "[35m[1mGET /api/v1/cursos/ HTTP/1.1[0m" 500 -
+2025-10-11 19:04:56,435 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:04:56] "[32mGET /api/v1/cursos HTTP/1.1[0m" 308 -
+2025-10-11 19:04:56,446 [ERROR][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [ERROR][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][GET] Error al listar cursos: 1054 (42S22): Unknown column 'ciclo' in 'field list' | IP:127.0.0.1 | User:admin | t:0.0055s
+2025-10-11 19:04:56,466 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:04:56] "[35m[1mGET /api/v1/cursos/ HTTP/1.1[0m" 500 -
+2025-10-11 19:05:07,887 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:05:07] "[32mGET /api/v1/cursos HTTP/1.1[0m" 308 -
+2025-10-11 19:05:07,901 [ERROR][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [ERROR][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][GET] Error al listar cursos: 1054 (42S22): Unknown column 'ciclo' in 'field list' | IP:127.0.0.1 | User:admin | t:0.0047s
+2025-10-11 19:05:07,920 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:05:07] "[35m[1mGET /api/v1/cursos/ HTTP/1.1[0m" 500 -
+2025-10-11 19:05:48,326 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:05:48] "[32mPOST /api/v1/cursos HTTP/1.1[0m" 308 -
+2025-10-11 19:05:48,342 [ERROR][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [ERROR][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][POST] Error al crear curso CS202: 1054 (42S22): Unknown column 'ciclo' in 'field list' | IP:127.0.0.1 | User:admin | t:0.005s
+2025-10-11 19:05:48,353 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:05:48] "[35m[1mPOST /api/v1/cursos/ HTTP/1.1[0m" 500 -
+2025-10-11 19:06:51,612 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:06:51] "[32mPOST /api/v1/cursos HTTP/1.1[0m" 308 -
+2025-10-11 19:06:51,629 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][POST] Nuevo curso CS202 - Programación Orientada a Objetos registrado correctamente | IP:127.0.0.1 | User:admin | t:0.0114s
+2025-10-11 19:06:51,637 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:06:51] "[35m[1mPOST /api/v1/cursos/ HTTP/1.1[0m" 201 -
+2025-10-11 19:06:55,587 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:06:55] "[32mGET /api/v1/cursos HTTP/1.1[0m" 308 -
+2025-10-11 19:06:55,596 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][GET] Listado de 1 cursos recuperado correctamente | IP:127.0.0.1 | User:admin | t:0.003s
+2025-10-11 19:06:55,607 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:06:55] "GET /api/v1/cursos/ HTTP/1.1" 200 -
+2025-10-11 19:09:31,267 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:09:31] "[32mPOST /api/v1/matriculas HTTP/1.1[0m" 308 -
+2025-10-11 19:09:31,304 [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Estudiante 74093841 no encontrado | IP:127.0.0.1 | User:anon | t:0.0047s
+2025-10-11 19:09:31,311 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:09:31] "[33mGET /api/v1/estudiantes/74093841 HTTP/1.1[0m" 404 -
+2025-10-11 19:09:31,327 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][GET] Consulta de curso CS202 exitosa | IP:127.0.0.1 | User:anon | t:0.0087s
+2025-10-11 19:09:31,335 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:09:31] "GET /api/v1/cursos/CS202 HTTP/1.1" 200 -
+2025-10-11 19:09:31,338 [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service] [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service][POST] Estudiante 74093841 no encontrado | IP:127.0.0.1 | User:admin | t:0.0638s
+2025-10-11 19:09:31,345 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:09:31] "[33mPOST /api/v1/matriculas/ HTTP/1.1[0m" 404 -
+2025-10-11 19:09:40,547 [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Estudiante 74093841 no encontrado | IP:127.0.0.1 | User:anon | t:0.004s
+2025-10-11 19:09:40,556 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:09:40] "[33mGET /api/v1/estudiantes/74093841 HTTP/1.1[0m" 404 -
+2025-10-11 19:09:40,574 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][GET] Consulta de curso CS202 exitosa | IP:127.0.0.1 | User:anon | t:0.0075s
+2025-10-11 19:09:40,585 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:09:40] "GET /api/v1/cursos/CS202 HTTP/1.1" 200 -
+2025-10-11 19:09:40,586 [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service] [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service][POST] Estudiante 74093841 no encontrado | IP:127.0.0.1 | User:admin | t:0.0461s
+2025-10-11 19:09:40,603 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:09:40] "[33mPOST /api/v1/matriculas/ HTTP/1.1[0m" 404 -
+2025-10-11 19:10:13,581 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:10:13,588 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:10:13] "[35m[1mGET /api/estudiantes/ HTTP/1.1[0m" 500 -
+2025-10-11 19:10:20,069 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:10:20,098 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:10:20] "[35m[1mGET /api/estudiantes/ HTTP/1.1[0m" 500 -
+2025-10-11 19:10:22,878 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:10:22,885 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:10:22] "[35m[1mGET /api/estudiantes HTTP/1.1[0m" 500 -
+2025-10-11 19:10:33,896 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:10:33] "[32mGET /api/v1/estudiantes HTTP/1.1[0m" 308 -
+2025-10-11 19:10:33,907 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Listado de 1 estudiantes recuperado correctamente | IP:127.0.0.1 | User:admin | t:0.002s
+2025-10-11 19:10:33,924 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:10:33] "GET /api/v1/estudiantes/ HTTP/1.1" 200 -
+2025-10-11 19:10:44,549 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:10:44] "[32mGET /api/v1/matriculas HTTP/1.1[0m" 308 -
+2025-10-11 19:10:44,573 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service][GET] Listado de 0 matrículas recuperado correctamente | IP:127.0.0.1 | User:admin | t:0.0163s
+2025-10-11 19:10:44,579 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:10:44] "GET /api/v1/matriculas/ HTTP/1.1" 200 -
+2025-10-11 19:10:51,516 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:10:51] "[32mPOST /api/v1/matriculas HTTP/1.1[0m" 308 -
+2025-10-11 19:10:51,544 [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Estudiante 74093841 no encontrado | IP:127.0.0.1 | User:anon | t:0.0056s
+2025-10-11 19:10:51,586 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:10:51] "[33mGET /api/v1/estudiantes/74093841 HTTP/1.1[0m" 404 -
+2025-10-11 19:10:51,605 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][GET] Consulta de curso CS202 exitosa | IP:127.0.0.1 | User:anon | t:0.0086s
+2025-10-11 19:10:51,614 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:10:51] "GET /api/v1/cursos/CS202 HTTP/1.1" 200 -
+2025-10-11 19:10:51,616 [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service] [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service][POST] Estudiante 74093841 no encontrado | IP:127.0.0.1 | User:admin | t:0.0849s
+2025-10-11 19:10:51,623 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:10:51] "[33mPOST /api/v1/matriculas/ HTTP/1.1[0m" 404 -
+2025-10-11 19:12:03,354 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:12:03,368 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:12:03] "[35m[1mGET /api/cursos/codigo/CS202 HTTP/1.1[0m" 500 -
+2025-10-11 19:12:22,975 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:12:22,990 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:12:22] "[35m[1mGET /api/cursos/C5202 HTTP/1.1[0m" 500 -
+2025-10-11 19:12:26,986 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:12:26,997 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:12:26] "[35m[1mGET /api/cursos/CS202 HTTP/1.1[0m" 500 -
+2025-10-11 19:12:30,327 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:12:30,338 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:12:30] "[35m[1mGET /api/cursos/ HTTP/1.1[0m" 500 -
+2025-10-11 19:16:27,156 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:16:27,163 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:16:27] "[35m[1mGET /api/v1/cursos/codigo/CS202 HTTP/1.1[0m" 500 -
+2025-10-11 19:19:38,622 [INFO][werkzeug]  * Detected change in 'D:\\SOA_PHYTON\\SOA_PHYTON\\soa_matricula\\matriculas.py', reloading
+2025-10-11 19:19:38,731 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 19:19:39,596 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 19:19:39,605 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 19:19:53,663 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:19:53,939 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:19:53] "[35m[1mGET /api/v1/cursos/codigo/CS202 HTTP/1.1[0m" 500 -
+2025-10-11 19:20:47,936 [INFO][werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-11 19:20:47,938 [INFO][werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-11 19:20:47,944 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 19:20:48,551 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 19:20:48,555 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 19:21:04,499 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Listado de 1 estudiantes recuperado correctamente | IP:127.0.0.1 | User:anon | t:0.176s
+2025-10-11 19:21:04,517 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:21:04] "GET /api/v1/estudiantes/ HTTP/1.1" 200 -
+2025-10-11 19:21:04,699 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 19:21:04,713 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:21:04] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-10-11 19:21:52,346 [INFO][werkzeug]  * Detected change in 'D:\\SOA_PHYTON\\SOA_PHYTON\\soa_matricula\\app.py', reloading
+2025-10-11 19:21:52,447 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 19:21:53,750 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 19:21:53,753 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 19:22:25,672 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:22:25] "[32mGET /api/v1/continental.edu.pe/soa/estudiantes-service HTTP/1.1[0m" 308 -
+2025-10-11 19:22:26,095 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Listado de 1 estudiantes recuperado correctamente | IP:127.0.0.1 | User:admin | t:0.3907s
+2025-10-11 19:22:26,110 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:22:26] "GET /api/v1/continental.edu.pe/soa/estudiantes-service/ HTTP/1.1" 200 -
+2025-10-11 19:22:39,691 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:22:39] "[32mGET /api/v1/continental.edu.pe/soa/cursos-service HTTP/1.1[0m" 308 -
+2025-10-11 19:22:39,709 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][GET] Listado de 1 cursos recuperado correctamente | IP:127.0.0.1 | User:admin | t:0.004s
+2025-10-11 19:22:39,716 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:22:39] "GET /api/v1/continental.edu.pe/soa/cursos-service/ HTTP/1.1" 200 -
+2025-10-11 19:23:14,978 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:23:14] "[32mGET /api/v1/continental.edu.pe/soa/estudiantes-service HTTP/1.1[0m" 308 -
+2025-10-11 19:23:14,989 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Listado de 1 estudiantes recuperado correctamente | IP:127.0.0.1 | User:admin | t:0.005s
+2025-10-11 19:23:15,011 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:23:15] "GET /api/v1/continental.edu.pe/soa/estudiantes-service/ HTTP/1.1" 200 -
+2025-10-11 19:23:27,214 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:23:27] "[32mGET /api/v1/continental.edu.pe/soa/matriculas-service HTTP/1.1[0m" 308 -
+2025-10-11 19:23:27,233 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service][GET] Listado de 0 matrículas recuperado correctamente | IP:127.0.0.1 | User:admin | t:0.0114s
+2025-10-11 19:23:27,245 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:23:27] "GET /api/v1/continental.edu.pe/soa/matriculas-service/ HTTP/1.1" 200 -
+2025-10-11 19:25:14,468 [INFO][werkzeug]  * Detected change in 'D:\\SOA_PHYTON\\SOA_PHYTON\\soa_matricula\\matriculas.py', reloading
+2025-10-11 19:25:15,063 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 19:25:16,146 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 19:25:16,154 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 19:25:47,846 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:25:48,179 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:25:48] "[35m[1mGET /api/v1/estudiantes/codigo/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 19:25:56,659 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:25:56,673 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:25:56] "[35m[1mGET /api/v1/estudiantes/codigo/ HTTP/1.1[0m" 500 -
+2025-10-11 19:26:00,175 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:26:00,188 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:26:00] "[35m[1mGET /api/v1/estudiantes/ HTTP/1.1[0m" 500 -
+2025-10-11 19:26:01,963 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:26:01,970 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:26:01] "[35m[1mGET /api/v1/estudiantes HTTP/1.1[0m" 500 -
+2025-10-11 19:26:03,683 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:26:03,693 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:26:03] "[35m[1mGET /api/v1/estudiante/ HTTP/1.1[0m" 500 -
+2025-10-11 19:26:09,425 [INFO][werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-11 19:26:09,425 [INFO][werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-11 19:26:09,427 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 19:26:10,108 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 19:26:10,114 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 19:26:12,749 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:26:12,889 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:26:12] "[35m[1mGET /api/v1/estudiante/ HTTP/1.1[0m" 500 -
+2025-10-11 19:26:14,809 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:26:14,820 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:26:14] "[35m[1mGET /api/v1/estudiante HTTP/1.1[0m" 500 -
+2025-10-11 19:26:16,539 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:26:16,560 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:26:16] "[35m[1mGET /api/v1/estudiantes HTTP/1.1[0m" 500 -
+2025-10-11 19:26:24,935 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:26:24,944 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:26:24] "[35m[1mGET /api/v1/estudiantes/ HTTP/1.1[0m" 500 -
+2025-10-11 19:26:36,660 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:26:36] "[32mGET /api/v1/continental.edu.pe/soa/estudiantes-service HTTP/1.1[0m" 308 -
+2025-10-11 19:26:36,682 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Listado de 1 estudiantes recuperado correctamente | IP:127.0.0.1 | User:admin | t:0.0078s
+2025-10-11 19:26:36,689 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:26:36] "GET /api/v1/continental.edu.pe/soa/estudiantes-service/ HTTP/1.1" 200 -
+2025-10-11 19:27:26,615 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:27:26,629 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:27:26] "[35m[1mPOST /api/v1/matriculas HTTP/1.1[0m" 500 -
+2025-10-11 19:29:37,105 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:29:37] "[32mPOST /api/v1/continental.edu.pe/soa/matriculas-service HTTP/1.1[0m" 308 -
+2025-10-11 19:29:37,126 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 19:29:37,146 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:29:37] "[35m[1mGET /api/v1/estudiantes/codigo/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 19:29:37,165 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 19:29:37,171 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:29:37] "[35m[1mGET /api/v1/cursos/codigo/CS202 HTTP/1.1[0m" 500 -
+2025-10-11 19:29:37,176 [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service] [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service][POST] Estudiante 15926345 no encontrado | IP:127.0.0.1 | User:admin | t:0.0582s
+2025-10-11 19:29:37,193 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:29:37] "[33mPOST /api/v1/continental.edu.pe/soa/matriculas-service/ HTTP/1.1[0m" 404 -
+2025-10-11 19:33:28,626 [INFO][werkzeug]  * Detected change in 'D:\\SOA_PHYTON\\SOA_PHYTON\\soa_matricula\\matriculas.py', reloading
+2025-10-11 19:33:28,729 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 19:33:29,533 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 19:33:29,541 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 19:33:34,469 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:33:34] "[32mPOST /api/v1/continental.edu.pe/soa/matriculas-service HTTP/1.1[0m" 308 -
+2025-10-11 19:33:34,497 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 19:33:34,800 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:33:34] "[35m[1mGET /api/v1/continental.edu.pe/soa/estudiantes-service/codigo/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 19:33:34,806 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 19:33:34,813 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:33:34] "[35m[1mGET /api/v1/continental.edu.pe/soa/cursos-service/codigo/CS202 HTTP/1.1[0m" 500 -
+2025-10-11 19:33:34,815 [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service] [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service][POST] Estudiante 15926345 no encontrado | IP:127.0.0.1 | User:admin | t:0.3382s
+2025-10-11 19:33:34,827 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:33:34] "[33mPOST /api/v1/continental.edu.pe/soa/matriculas-service/ HTTP/1.1[0m" 404 -
+2025-10-11 19:35:29,359 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:35:29] "[32mGET /api/v1/continental.edu.pe/soa/matriculas-service HTTP/1.1[0m" 308 -
+2025-10-11 19:35:29,373 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service][GET] Listado de 0 matrículas recuperado correctamente | IP:127.0.0.1 | User:admin | t:0.0041s
+2025-10-11 19:35:29,396 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:35:29] "GET /api/v1/continental.edu.pe/soa/matriculas-service/ HTTP/1.1" 200 -
+2025-10-11 19:35:33,397 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:35:33] "[32mPOST /api/v1/continental.edu.pe/soa/matriculas-service HTTP/1.1[0m" 308 -
+2025-10-11 19:35:33,415 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 19:35:33,427 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:35:33] "[35m[1mGET /api/v1/continental.edu.pe/soa/estudiantes-service/codigo/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 19:35:33,434 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 19:35:33,450 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:35:33] "[35m[1mGET /api/v1/continental.edu.pe/soa/cursos-service/codigo/CS202 HTTP/1.1[0m" 500 -
+2025-10-11 19:35:33,452 [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service] [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service][POST] Estudiante 15926345 no encontrado | IP:127.0.0.1 | User:admin | t:0.0511s
+2025-10-11 19:35:33,465 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:35:33] "[33mPOST /api/v1/continental.edu.pe/soa/matriculas-service/ HTTP/1.1[0m" 404 -
+2025-10-11 19:38:06,974 [INFO][werkzeug]  * Detected change in 'D:\\SOA_PHYTON\\SOA_PHYTON\\soa_matricula\\matriculas.py', reloading
+2025-10-11 19:38:07,121 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 19:38:07,856 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 19:38:07,864 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 19:38:34,548 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:38:34] "[32mPOST /api/v1/continental.edu.pe/soa/matriculas-service HTTP/1.1[0m" 308 -
+2025-10-11 19:38:34,581 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 19:38:34,805 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:38:34] "[35m[1mGET /api/v1/continental.edu.pe/soa/estudiantes-service/codigo/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 19:38:34,813 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 19:38:34,821 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:38:34] "[35m[1mGET /api/v1/continental.edu.pe/soa/cursos-service/codigo/CS202 HTTP/1.1[0m" 500 -
+2025-10-11 19:38:34,828 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:38:34] "[33mPOST /api/v1/continental.edu.pe/soa/matriculas-service/ HTTP/1.1[0m" 404 -
+2025-10-11 19:40:32,015 [INFO][werkzeug]  * Detected change in 'D:\\SOA_PHYTON\\SOA_PHYTON\\soa_matricula\\matriculas.py', reloading
+2025-10-11 19:40:32,113 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 19:40:32,852 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 19:40:32,859 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 19:40:36,732 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:40:36] "[32mPOST /api/v1/continental.edu.pe/soa/matriculas-service HTTP/1.1[0m" 308 -
+2025-10-11 19:40:36,744 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 19:40:36,934 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:40:36] "[35m[1mGET /api/v1/continental.edu.pe/soa/estudiantes-service/codigo/<codigo>/codigo/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 19:40:36,947 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 19:40:36,962 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:40:36] "[35m[1mGET /api/v1/continental.edu.pe/soa/cursos-service/codigo/CS202 HTTP/1.1[0m" 500 -
+2025-10-11 19:40:36,966 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:40:36] "[33mPOST /api/v1/continental.edu.pe/soa/matriculas-service/ HTTP/1.1[0m" 404 -
+2025-10-11 19:41:06,458 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:41:06,484 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:41:06] "[35m[1mGET /api/v1/continental.edu.pe/soa/estudiantes-service/codigo/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 19:41:14,670 [INFO][werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-11 19:41:14,670 [INFO][werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-11 19:41:14,673 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 19:41:15,414 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 19:41:15,432 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 19:41:17,067 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:41:17,285 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:41:17] "[35m[1mGET /api/v1/continental.edu.pe/soa/estudiantes-service/codigo/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 19:42:12,290 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:42:12,302 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:42:12] "[35m[1mGET /api/v1/continental.edu.pe/soa/estudiantes-service/codigo/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 19:43:29,848 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:43:29,856 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:43:29] "[35m[1mGET /api/v1/continental.edu.pe/soa/estudiantes-service/codigo/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 19:43:32,361 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:43:32,381 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:43:32] "[35m[1mGET /api/v1/continental.edu.pe/soa/estudiantes-service/codigo/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 19:44:15,895 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Consulta de estudiante 15926345 exitosa | IP:127.0.0.1 | User:admin | t:0.0044s
+2025-10-11 19:44:15,914 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:44:15] "GET /api/v1/continental.edu.pe/soa/estudiantes-service/15926345 HTTP/1.1" 200 -
+2025-10-11 19:47:05,667 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Listado de 1 estudiantes recuperado correctamente | IP:127.0.0.1 | User:anon | t:0.0047s
+2025-10-11 19:47:05,676 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:47:05] "GET /api/v1/continental.edu.pe/soa/estudiantes-service/ HTTP/1.1" 200 -
+2025-10-11 19:47:05,799 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 19:47:05,810 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:47:05] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-10-11 19:47:20,484 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 19:47:20,492 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:47:20] "[35m[1mGET /api/v1/continental.edu.pe/soa/estudiantes-service/codigo/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 19:47:20,613 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 19:47:20,624 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:47:20] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-10-11 19:47:28,878 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Consulta de estudiante 15926345 exitosa | IP:127.0.0.1 | User:anon | t:0.0049s
+2025-10-11 19:47:28,886 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:47:28] "GET /api/v1/continental.edu.pe/soa/estudiantes-service/15926345 HTTP/1.1" 200 -
+2025-10-11 19:47:28,970 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 19:47:28,977 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:47:28] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-10-11 19:47:48,572 [INFO][werkzeug]  * Detected change in 'D:\\SOA_PHYTON\\SOA_PHYTON\\soa_matricula\\matriculas.py', reloading
+2025-10-11 19:47:48,647 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 19:47:49,133 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 19:47:49,141 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 19:47:54,941 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Consulta de estudiante 15926345 exitosa | IP:127.0.0.1 | User:admin | t:0.2799s
+2025-10-11 19:47:54,960 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:47:54] "GET /api/v1/continental.edu.pe/soa/estudiantes-service/15926345 HTTP/1.1" 200 -
+2025-10-11 19:48:06,073 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:48:06,084 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:48:06] "[35m[1mPOST /api/v1/continental.edu.pe/soa/estudiantes-service/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 19:48:08,814 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Consulta de estudiante 15926345 exitosa | IP:127.0.0.1 | User:admin | t:0.0036s
+2025-10-11 19:48:08,820 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:48:08] "GET /api/v1/continental.edu.pe/soa/estudiantes-service/15926345 HTTP/1.1" 200 -
+2025-10-11 19:48:12,242 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:48:12,253 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:48:12] "[35m[1mPOST /api/v1/continental.edu.pe/soa/estudiantes-service/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 19:48:15,803 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Consulta de estudiante 15926345 exitosa | IP:127.0.0.1 | User:admin | t:0.0058s
+2025-10-11 19:48:15,814 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:48:15] "GET /api/v1/continental.edu.pe/soa/estudiantes-service/15926345 HTTP/1.1" 200 -
+2025-10-11 19:48:50,141 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:48:50] "[32mPOST /api/v1/continental.edu.pe/soa/matriculas-service HTTP/1.1[0m" 308 -
+2025-10-11 19:48:50,155 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 19:48:50,163 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:48:50] "[35m[1mGET /api/v1/continental.edu.pe/soa/estudiantes-service/<codigo>/codigo/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 19:48:50,170 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 19:48:50,176 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:48:50] "[35m[1mGET /api/v1/continental.edu.pe/soa/cursos-service/codigo/CS202 HTTP/1.1[0m" 500 -
+2025-10-11 19:48:50,180 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:48:50] "[33mPOST /api/v1/continental.edu.pe/soa/matriculas-service/ HTTP/1.1[0m" 404 -
+2025-10-11 19:49:51,642 [INFO][werkzeug]  * Detected change in 'D:\\SOA_PHYTON\\SOA_PHYTON\\soa_matricula\\estudiantes.py', reloading
+2025-10-11 19:49:51,691 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 19:49:52,268 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 19:49:52,272 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 19:50:16,631 [INFO][werkzeug]  * Detected change in 'D:\\SOA_PHYTON\\SOA_PHYTON\\soa_matricula\\matriculas.py', reloading
+2025-10-11 19:50:16,717 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 19:50:17,544 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 19:50:17,556 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 19:50:19,226 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:50:19] "[32mPOST /api/v1/continental.edu.pe/soa/matriculas-service HTTP/1.1[0m" 308 -
+2025-10-11 19:50:19,238 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 19:50:19,396 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:50:19] "[35m[1mGET /api/v1/continental.edu.pe/soa/estudiantes-service/codigo/<codigo>/codigo/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 19:50:19,404 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 19:50:19,411 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:50:19] "[35m[1mGET /api/v1/continental.edu.pe/soa/cursos-service/codigo/CS202 HTTP/1.1[0m" 500 -
+2025-10-11 19:50:19,413 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:50:19] "[33mPOST /api/v1/continental.edu.pe/soa/matriculas-service/ HTTP/1.1[0m" 404 -
+2025-10-11 19:50:51,524 [INFO][werkzeug]  * Detected change in 'D:\\SOA_PHYTON\\SOA_PHYTON\\soa_matricula\\estudiantes.py', reloading
+2025-10-11 19:50:51,583 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 19:50:52,524 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 19:50:52,532 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 19:51:53,445 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Consulta de estudiante 15926345 exitosa | IP:127.0.0.1 | User:admin | t:0.1736s
+2025-10-11 19:51:53,452 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:51:53] "GET /api/v1/continental.edu.pe/soa/estudiantes-service/codigo/15926345 HTTP/1.1" 200 -
+2025-10-11 19:52:13,401 [INFO][werkzeug]  * Detected change in 'D:\\SOA_PHYTON\\SOA_PHYTON\\soa_matricula\\estudiantes.py', reloading
+2025-10-11 19:52:13,461 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 19:52:13,991 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 19:52:14,003 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 19:52:18,446 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Consulta de estudiante 15926345 exitosa | IP:127.0.0.1 | User:admin | t:0.0823s
+2025-10-11 19:52:18,465 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:52:18] "GET /api/v1/continental.edu.pe/soa/estudiantes-service/codigo/15926345 HTTP/1.1" 200 -
+2025-10-11 19:53:29,935 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:53:29] "[32mGET /api/v1/continental.edu.pe/soa/cursos-service HTTP/1.1[0m" 308 -
+2025-10-11 19:53:29,945 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][GET] Listado de 1 cursos recuperado correctamente | IP:127.0.0.1 | User:admin | t:0.0059s
+2025-10-11 19:53:29,955 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:53:29] "GET /api/v1/continental.edu.pe/soa/cursos-service/ HTTP/1.1" 200 -
+2025-10-11 19:53:36,832 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][GET] Consulta de curso CS202 exitosa | IP:127.0.0.1 | User:admin | t:0.0098s
+2025-10-11 19:53:36,841 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:53:36] "GET /api/v1/continental.edu.pe/soa/cursos-service/CS202 HTTP/1.1" 200 -
+2025-10-11 19:53:46,290 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:53:46,301 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:53:46] "[35m[1mGET /api/v1/continental.edu.pe/soa/cursos-service/codigo/CS202 HTTP/1.1[0m" 500 -
+2025-10-11 19:53:52,058 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][GET] Consulta de curso CS202 exitosa | IP:127.0.0.1 | User:admin | t:0.004s
+2025-10-11 19:53:52,067 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:53:52] "GET /api/v1/continental.edu.pe/soa/cursos-service/CS202 HTTP/1.1" 200 -
+2025-10-11 19:54:20,726 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:54:20,741 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:54:20] "[35m[1mGET /api/v1/continental.edu.pe/soa/estudiantes-service/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 19:54:25,124 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Consulta de estudiante 15926345 exitosa | IP:127.0.0.1 | User:admin | t:0.0041s
+2025-10-11 19:54:25,144 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:54:25] "GET /api/v1/continental.edu.pe/soa/estudiantes-service/codigo/15926345 HTTP/1.1" 200 -
+2025-10-11 19:54:54,921 [INFO][werkzeug]  * Detected change in 'D:\\SOA_PHYTON\\SOA_PHYTON\\soa_matricula\\matriculas.py', reloading
+2025-10-11 19:54:54,971 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 19:54:55,459 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 19:54:55,462 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 19:55:11,102 [INFO][werkzeug]  * Detected change in 'D:\\SOA_PHYTON\\SOA_PHYTON\\soa_matricula\\cursos.py', reloading
+2025-10-11 19:55:11,153 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 19:55:11,611 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 19:55:11,611 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 19:55:23,845 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:55:23] "[32mGET /api/v1/continental.edu.pe/soa/cursos-service HTTP/1.1[0m" 308 -
+2025-10-11 19:55:23,957 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][GET] Listado de 1 cursos recuperado correctamente | IP:127.0.0.1 | User:admin | t:0.109s
+2025-10-11 19:55:23,978 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:55:23] "GET /api/v1/continental.edu.pe/soa/cursos-service/ HTTP/1.1" 200 -
+2025-10-11 19:55:30,528 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 19:55:30,548 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:55:30] "[35m[1mGET /api/v1/continental.edu.pe/soa/cursos-service/CS202 HTTP/1.1[0m" 500 -
+2025-10-11 19:55:34,546 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][GET] Consulta de curso CS202 exitosa | IP:127.0.0.1 | User:admin | t:0.0045s
+2025-10-11 19:55:34,558 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:55:34] "GET /api/v1/continental.edu.pe/soa/cursos-service/codigo/CS202 HTTP/1.1" 200 -
+2025-10-11 19:55:56,057 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:55:56] "[32mPOST /api/v1/continental.edu.pe/soa/matriculas-service HTTP/1.1[0m" 308 -
+2025-10-11 19:55:56,074 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 19:55:56,083 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:55:56] "[35m[1mGET /api/v1/continental.edu.pe/soa/estudiantes-service/codigo/<codigo>/codigo/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 19:55:56,114 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 19:55:56,125 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:55:56] "[35m[1mGET /api/v1/continental.edu.pe/soa/cursos-service/codigo/<codigo>/codigo/CS202 HTTP/1.1[0m" 500 -
+2025-10-11 19:55:56,130 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:55:56] "[33mPOST /api/v1/continental.edu.pe/soa/matriculas-service/ HTTP/1.1[0m" 404 -
+2025-10-11 19:56:35,754 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Consulta de estudiante 15926345 exitosa | IP:127.0.0.1 | User:admin | t:0.0053s
+2025-10-11 19:56:35,773 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 19:56:35] "GET /api/v1/continental.edu.pe/soa/estudiantes-service/codigo/15926345 HTTP/1.1" 200 -
+2025-10-11 19:59:26,879 [INFO][werkzeug]  * Detected change in 'D:\\SOA_PHYTON\\SOA_PHYTON\\soa_matricula\\matriculas.py', reloading
+2025-10-11 19:59:26,945 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 19:59:27,456 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 19:59:27,462 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 20:00:02,031 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:00:02] "[32mPOST /api/v1/continental.edu.pe/soa/matriculas-service HTTP/1.1[0m" 308 -
+2025-10-11 20:00:02,048 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 20:00:02,174 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:00:02] "[35m[1mGET /api/v1/continental.edu.pe/soa/estudiantes-service/codigo/<codigo>/codigo/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 20:00:02,182 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:00:02] "[32mGET /api/v1/continental.edu.pe/soa/cursos-service//codigo/CS202 HTTP/1.1[0m" 308 -
+2025-10-11 20:00:02,189 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][GET] Consulta de curso CS202 exitosa | IP:127.0.0.1 | User:anon | t:0.0025s
+2025-10-11 20:00:02,195 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:00:02] "GET /api/v1/continental.edu.pe/soa/cursos-service/codigo/CS202 HTTP/1.1" 200 -
+2025-10-11 20:00:02,200 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:00:02] "[33mPOST /api/v1/continental.edu.pe/soa/matriculas-service/ HTTP/1.1[0m" 404 -
+2025-10-11 20:00:45,385 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:00:45] "[32mGET /api/v1/continental.edu.pe/soa/matriculas-service HTTP/1.1[0m" 308 -
+2025-10-11 20:00:45,398 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service][GET] 0 matrículas listadas | IP:127.0.0.1 | User:admin | t:0.0063s
+2025-10-11 20:00:45,419 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:00:45] "GET /api/v1/continental.edu.pe/soa/matriculas-service/ HTTP/1.1" 200 -
+2025-10-11 20:02:26,982 [INFO][werkzeug]  * Detected change in 'D:\\SOA_PHYTON\\SOA_PHYTON\\soa_matricula\\matriculas.py', reloading
+2025-10-11 20:02:27,062 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 20:02:27,541 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 20:02:27,554 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 20:02:41,579 [INFO][werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-11 20:02:41,579 [INFO][werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-11 20:02:41,582 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 20:02:42,032 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 20:02:42,032 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 20:03:00,644 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:03:00] "[32mPOST /api/v1/continental.edu.pe/soa/matriculas-service HTTP/1.1[0m" 308 -
+2025-10-11 20:03:00,659 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-11 20:03:00,819 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:03:00] "[35m[1mGET /api/v1/continental.edu.pe/soa/estudiantes-service/codigo/<codigo>/codigo/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 20:03:00,822 [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service] [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service][POST] Estudiante 15926345 no encontrado en http://127.0.0.1:5000/api/v1/continental.edu.pe/soa/estudiantes-service/codigo/<codigo>/codigo/15926345 | IP:127.0.0.1 | User:admin | t:0.1709s
+2025-10-11 20:03:00,832 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:03:00] "[33mPOST /api/v1/continental.edu.pe/soa/matriculas-service/ HTTP/1.1[0m" 404 -
+2025-10-11 20:07:40,845 [INFO][werkzeug]  * Detected change in 'D:\\SOA_PHYTON\\SOA_PHYTON\\soa_matricula\\matriculas.py', reloading
+2025-10-11 20:07:41,016 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 20:07:41,938 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 20:07:41,948 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 20:08:27,163 [INFO][werkzeug]  * Detected change in 'D:\\SOA_PHYTON\\SOA_PHYTON\\soa_matricula\\matriculas.py', reloading
+2025-10-11 20:08:27,237 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 20:08:27,796 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 20:08:27,803 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 20:08:32,626 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:08:32] "[32mPOST /api/v1/continental.edu.pe/soa/matriculas-service HTTP/1.1[0m" 308 -
+2025-10-11 20:08:32,640 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:08:32] "[32mGET /api/v1/continental.edu.pe/soa/estudiantes-service//codigo/15926345 HTTP/1.1[0m" 308 -
+2025-10-11 20:08:32,817 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Consulta de estudiante 15926345 exitosa | IP:127.0.0.1 | User:anon | t:0.17s
+2025-10-11 20:08:32,822 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:08:32] "GET /api/v1/continental.edu.pe/soa/estudiantes-service/codigo/15926345 HTTP/1.1" 200 -
+2025-10-11 20:08:32,829 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:08:32] "[32mGET /api/v1/continental.edu.pe/soa/cursos-service//codigo/CS202 HTTP/1.1[0m" 308 -
+2025-10-11 20:08:32,841 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][GET] Consulta de curso CS202 exitosa | IP:127.0.0.1 | User:anon | t:0.004s
+2025-10-11 20:08:32,848 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:08:32] "GET /api/v1/continental.edu.pe/soa/cursos-service/codigo/CS202 HTTP/1.1" 200 -
+2025-10-11 20:08:32,862 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service][POST] Matrícula creada correctamente: estudiante 15926345, curso CS202 | IP:127.0.0.1 | User:admin | t:0.2293s
+2025-10-11 20:08:32,868 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:08:32] "[35m[1mPOST /api/v1/continental.edu.pe/soa/matriculas-service/ HTTP/1.1[0m" 201 -
+2025-10-11 20:08:36,930 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:08:36] "[32mGET /api/v1/continental.edu.pe/soa/matriculas-service HTTP/1.1[0m" 308 -
+2025-10-11 20:08:36,942 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service][GET] 1 matrículas listadas | IP:127.0.0.1 | User:admin | t:0.0081s
+2025-10-11 20:08:36,950 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:08:36] "GET /api/v1/continental.edu.pe/soa/matriculas-service/ HTTP/1.1" 200 -
+2025-10-11 20:09:08,677 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 20:09:08,696 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:09:08] "[35m[1mGET /api/v1/continental.edu.pe/soa/matriculas-service/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 20:09:13,925 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 20:09:13,943 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:09:13] "[35m[1mGET /api/v1/continental.edu.pe/soa/matriculas-service/codigo/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 20:13:22,843 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 20:13:22,861 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:13:22] "[35m[1mGET /api/v1/continental.edu.pe/soa/matriculas-service/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 20:13:26,763 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 20:13:26,775 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:13:26] "[35m[1mGET /api/v1/continental.edu.pe/soa/matriculas-service/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 20:13:33,509 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service][GET] 1 matrículas listadas | IP:127.0.0.1 | User:admin | t:0.0053s
+2025-10-11 20:13:33,517 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:13:33] "GET /api/v1/continental.edu.pe/soa/matriculas-service/ HTTP/1.1" 200 -
+2025-10-11 20:14:39,330 [INFO][werkzeug]  * Detected change in 'D:\\SOA_PHYTON\\SOA_PHYTON\\soa_matricula\\academico.py', reloading
+2025-10-11 20:14:39,483 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 20:14:40,531 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 20:14:40,539 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 20:15:05,710 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: TypeError: log_event() missing 1 required positional argument: 'mensaje' | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 20:15:05,717 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:15:05] "[35m[1mGET /api/v1/academico/matriculas/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 20:16:14,674 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: TypeError: log_event() missing 1 required positional argument: 'mensaje' | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 20:16:14,684 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:16:14] "[35m[1mGET /api/v1/academico/matriculas/15926345 HTTP/1.1[0m" 500 -
+2025-10-11 20:17:28,508 [INFO][werkzeug]  * Detected change in 'D:\\SOA_PHYTON\\SOA_PHYTON\\soa_matricula\\academico.py', reloading
+2025-10-11 20:17:28,613 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 20:17:29,563 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 20:17:29,574 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 20:17:49,633 [INFO][werkzeug]  * Detected change in 'D:\\SOA_PHYTON\\SOA_PHYTON\\soa_matricula\\app.py', reloading
+2025-10-11 20:17:49,693 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 20:17:50,251 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 20:17:50,256 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 20:18:07,774 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/academico-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/academico-service][GET] Historial académico recuperado 15926345 | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 20:18:07,789 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:18:07] "GET /api/v1/continental.edu.pe/soa/academico-service/matriculas/15926345 HTTP/1.1" 200 -
+2025-10-11 20:21:55,747 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 20:21:55,755 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:21:55] "[35m[1mGET /api/v1/continental.edu.pe/soa/estudiantes-service/74093841 HTTP/1.1[0m" 500 -
+2025-10-11 20:22:00,858 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 20:22:00,867 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:22:00] "[35m[1mPOST /api/v1/continental.edu.pe/soa/estudiantes-service/74093841 HTTP/1.1[0m" 500 -
+2025-10-11 20:22:10,171 [INFO][werkzeug] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-11 20:22:10,171 [INFO][werkzeug] [33mPress CTRL+C to quit[0m
+2025-10-11 20:22:10,173 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 20:22:10,696 [WARNING][werkzeug]  * Debugger is active!
+2025-10-11 20:22:10,700 [INFO][werkzeug]  * Debugger PIN: 144-317-316
+2025-10-11 20:22:21,464 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Listado de 1 estudiantes recuperado correctamente | IP:127.0.0.1 | User:admin | t:0.1583s
+2025-10-11 20:22:21,476 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:22:21] "GET /api/v1/continental.edu.pe/soa/estudiantes-service/ HTTP/1.1" 200 -
+2025-10-11 20:22:27,863 [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Estudiante 74093841 no encontrado | IP:127.0.0.1 | User:admin | t:0.0043s
+2025-10-11 20:22:27,875 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:22:27] "[33mGET /api/v1/continental.edu.pe/soa/estudiantes-service/codigo/74093841 HTTP/1.1[0m" 404 -
+2025-10-11 20:22:41,172 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 20:22:41,194 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:22:41] "[35m[1mPOST /api/v1/continental.edu.pe/soa/estudiantes-service/codigo/74093841 HTTP/1.1[0m" 500 -
+2025-10-11 20:22:52,346 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][POST] Estudiante Miguel Isidro (74093841) registrado correctamente | IP:127.0.0.1 | User:admin | t:0.02s
+2025-10-11 20:22:52,355 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:22:52] "[35m[1mPOST /api/v1/continental.edu.pe/soa/estudiantes-service/ HTTP/1.1[0m" 201 -
+2025-10-11 20:22:59,359 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Listado de 2 estudiantes recuperado correctamente | IP:127.0.0.1 | User:admin | t:0.005s
+2025-10-11 20:22:59,368 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:22:59] "GET /api/v1/continental.edu.pe/soa/estudiantes-service/ HTTP/1.1" 200 -
+2025-10-11 20:23:08,090 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Consulta de estudiante 74093841 exitosa | IP:127.0.0.1 | User:admin | t:0.0044s
+2025-10-11 20:23:08,102 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:23:08] "GET /api/v1/continental.edu.pe/soa/estudiantes-service/codigo/74093841 HTTP/1.1" 200 -
+2025-10-11 20:23:23,216 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][GET] Listado de 1 cursos recuperado correctamente | IP:127.0.0.1 | User:admin | t:0.005s
+2025-10-11 20:23:23,228 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:23:23] "GET /api/v1/continental.edu.pe/soa/cursos-service/ HTTP/1.1" 200 -
+2025-10-11 20:23:53,636 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][POST] Nuevo curso CS101 - Programación I registrado correctamente | IP:127.0.0.1 | User:admin | t:0.0223s
+2025-10-11 20:23:53,643 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:23:53] "[35m[1mPOST /api/v1/continental.edu.pe/soa/cursos-service/ HTTP/1.1[0m" 201 -
+2025-10-11 20:23:57,457 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][GET] Listado de 2 cursos recuperado correctamente | IP:127.0.0.1 | User:admin | t:0.0067s
+2025-10-11 20:23:57,469 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:23:57] "GET /api/v1/continental.edu.pe/soa/cursos-service/ HTTP/1.1" 200 -
+2025-10-11 20:24:05,923 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][GET] Consulta de curso CS101 exitosa | IP:127.0.0.1 | User:admin | t:0.0047s
+2025-10-11 20:24:05,945 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:24:05] "GET /api/v1/continental.edu.pe/soa/cursos-service/codigo/CS101 HTTP/1.1" 200 -
+2025-10-11 20:24:23,721 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service][GET] 1 matrículas listadas | IP:127.0.0.1 | User:admin | t:0.0048s
+2025-10-11 20:24:23,729 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:24:23] "GET /api/v1/continental.edu.pe/soa/matriculas-service/ HTTP/1.1" 200 -
+2025-10-11 20:24:40,383 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:24:40] "[32mGET /api/v1/continental.edu.pe/soa/estudiantes-service//codigo/74093841 HTTP/1.1[0m" 308 -
+2025-10-11 20:24:40,396 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Consulta de estudiante 74093841 exitosa | IP:127.0.0.1 | User:anon | t:0.006s
+2025-10-11 20:24:40,409 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:24:40] "GET /api/v1/continental.edu.pe/soa/estudiantes-service/codigo/74093841 HTTP/1.1" 200 -
+2025-10-11 20:24:40,439 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:24:40] "[32mGET /api/v1/continental.edu.pe/soa/cursos-service//codigo/CS101 HTTP/1.1[0m" 308 -
+2025-10-11 20:24:40,452 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][GET] Consulta de curso CS101 exitosa | IP:127.0.0.1 | User:anon | t:0.0052s
+2025-10-11 20:24:40,462 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:24:40] "GET /api/v1/continental.edu.pe/soa/cursos-service/codigo/CS101 HTTP/1.1" 200 -
+2025-10-11 20:24:40,471 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service][POST] Matrícula creada correctamente: estudiante 74093841, curso CS101 | IP:127.0.0.1 | User:admin | t:0.0979s
+2025-10-11 20:24:40,479 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:24:40] "[35m[1mPOST /api/v1/continental.edu.pe/soa/matriculas-service/ HTTP/1.1[0m" 201 -
+2025-10-11 20:24:44,013 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service][GET] 2 matrículas listadas | IP:127.0.0.1 | User:admin | t:0.0085s
+2025-10-11 20:24:44,021 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:24:44] "GET /api/v1/continental.edu.pe/soa/matriculas-service/ HTTP/1.1" 200 -
+2025-10-11 20:24:56,965 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service][GET] 2 matrículas listadas | IP:127.0.0.1 | User:admin | t:0.0051s
+2025-10-11 20:24:56,978 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:24:56] "GET /api/v1/continental.edu.pe/soa/matriculas-service/ HTTP/1.1" 200 -
+2025-10-11 20:25:03,691 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:25:03] "[32mGET /api/v1/continental.edu.pe/soa/estudiantes-service//codigo/74093841 HTTP/1.1[0m" 308 -
+2025-10-11 20:25:03,705 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Consulta de estudiante 74093841 exitosa | IP:127.0.0.1 | User:anon | t:0.0059s
+2025-10-11 20:25:03,720 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:25:03] "GET /api/v1/continental.edu.pe/soa/estudiantes-service/codigo/74093841 HTTP/1.1" 200 -
+2025-10-11 20:25:03,729 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:25:03] "[32mGET /api/v1/continental.edu.pe/soa/cursos-service//codigo/CS102 HTTP/1.1[0m" 308 -
+2025-10-11 20:25:03,739 [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][GET] Curso CS102 no encontrado | IP:127.0.0.1 | User:anon | t:0.003s
+2025-10-11 20:25:03,745 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:25:03] "[33mGET /api/v1/continental.edu.pe/soa/cursos-service/codigo/CS102 HTTP/1.1[0m" 404 -
+2025-10-11 20:25:03,747 [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service] [WARNING][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service][POST] Curso CS102 no encontrado en http://127.0.0.1:5000/api/v1/continental.edu.pe/soa/cursos-service//codigo/CS102 | IP:127.0.0.1 | User:admin | t:0.0773s
+2025-10-11 20:25:03,755 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:25:03] "[33mPOST /api/v1/continental.edu.pe/soa/matriculas-service/ HTTP/1.1[0m" 404 -
+2025-10-11 20:25:08,141 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service][GET] 2 matrículas listadas | IP:127.0.0.1 | User:admin | t:0.0055s
+2025-10-11 20:25:08,153 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:25:08] "GET /api/v1/continental.edu.pe/soa/matriculas-service/ HTTP/1.1" 200 -
+2025-10-11 20:25:15,183 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:25:15] "[32mGET /api/v1/continental.edu.pe/soa/estudiantes-service//codigo/74093841 HTTP/1.1[0m" 308 -
+2025-10-11 20:25:15,199 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/estudiantes-service][GET] Consulta de estudiante 74093841 exitosa | IP:127.0.0.1 | User:anon | t:0.0065s
+2025-10-11 20:25:15,220 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:25:15] "GET /api/v1/continental.edu.pe/soa/estudiantes-service/codigo/74093841 HTTP/1.1" 200 -
+2025-10-11 20:25:15,231 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:25:15] "[32mGET /api/v1/continental.edu.pe/soa/cursos-service//codigo/CS202 HTTP/1.1[0m" 308 -
+2025-10-11 20:25:15,240 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][GET] Consulta de curso CS202 exitosa | IP:127.0.0.1 | User:anon | t:0.0036s
+2025-10-11 20:25:15,251 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:25:15] "GET /api/v1/continental.edu.pe/soa/cursos-service/codigo/CS202 HTTP/1.1" 200 -
+2025-10-11 20:25:15,262 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/matriculas-service][POST] Matrícula creada correctamente: estudiante 74093841, curso CS202 | IP:127.0.0.1 | User:admin | t:0.0858s
+2025-10-11 20:25:15,269 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:25:15] "[35m[1mPOST /api/v1/continental.edu.pe/soa/matriculas-service/ HTTP/1.1[0m" 201 -
+2025-10-11 20:25:46,828 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/academico-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/academico-service][GET] Historial académico recuperado 74093841 | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 20:25:46,835 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:25:46] "GET /api/v1/continental.edu.pe/soa/academico-service/matriculas/74093841 HTTP/1.1" 200 -
+2025-10-11 20:26:18,881 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/cursos-service][GET] Listado de 2 cursos recuperado correctamente | IP:127.0.0.1 | User:admin | t:0.0051s
+2025-10-11 20:26:18,895 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:26:18] "GET /api/v1/continental.edu.pe/soa/cursos-service/ HTTP/1.1" 200 -
+2025-10-11 20:26:29,404 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 20:26:29,416 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:26:29] "[35m[1mPOST /api/v1/continental.edu.pe/soa/academico-service/ HTTP/1.1[0m" 500 -
+2025-10-11 20:26:39,820 [ERROR][continental.edu.pe/soa/app-core] [ERROR][continental.edu.pe/soa/app-core][SERVICE] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 20:26:39,839 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:26:39] "[35m[1mGET /api/v1/continental.edu.pe/soa/academico-service/ HTTP/1.1[0m" 500 -
+2025-10-11 20:26:47,470 [INFO][continental.edu.pe/soa/continental.edu.pe/soa/academico-service] [INFO][continental.edu.pe/soa/continental.edu.pe/soa/academico-service][GET] Historial académico recuperado 74093841 | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 20:26:47,485 [INFO][werkzeug] 127.0.0.1 - - [11/Oct/2025 20:26:47] "GET /api/v1/continental.edu.pe/soa/academico-service/matriculas/74093841 HTTP/1.1" 200 -
+2025-10-11 21:02:54,391 [INFO][werkzeug]  * Detected change in 'D:\\SOA_PHYTON\\SOA_PHYTON\\soa_matricula\\logger.py', reloading
+2025-10-11 21:02:54,604 [INFO][werkzeug]  * Restarting with stat
+2025-10-11 21:05:01 [INFO] [continental.edu.pe/soa/estudiantes-service] [GET] [req:7ee0dfee] Listado de 2 estudiantes recuperado correctamente | IP:127.0.0.1 | User:admin | t:0.2005s
+2025-10-11 21:07:01 [INFO] [continental.edu.pe/soa/estudiantes-service] [POST] [req:7ffa5056] Estudiante Jhonn Arturo (72659574) registrado correctamente | IP:127.0.0.1 | User:admin | t:0.0108s
+2025-10-11 21:07:17 [INFO] [continental.edu.pe/soa/estudiantes-service] [GET] [req:6da99b44] Consulta de estudiante 72659574 exitosa | IP:127.0.0.1 | User:admin | t:0.0048s
+2025-10-11 21:08:05 [INFO] [continental.edu.pe/soa/estudiantes-service] [GET] [req:9d205b01] Consulta de estudiante 72659574 exitosa | IP:127.0.0.1 | User:anon | t:0.0047s
+2025-10-11 21:08:05 [INFO] [continental.edu.pe/soa/cursos-service] [GET] [req:17d6ac9f] Consulta de curso CS101 exitosa | IP:127.0.0.1 | User:anon | t:0.0055s
+2025-10-11 21:08:05 [INFO] [continental.edu.pe/soa/matriculas-service] [POST] [req:c28b7e79] Matrícula creada correctamente: estudiante 72659574, curso CS101 | IP:127.0.0.1 | User:admin | t:0.1983s
+2025-10-11 21:08:15 [INFO] [continental.edu.pe/soa/estudiantes-service] [GET] [req:99a65f3f] Consulta de estudiante 72659574 exitosa | IP:127.0.0.1 | User:anon | t:0.0041s
+2025-10-11 21:08:15 [INFO] [continental.edu.pe/soa/cursos-service] [GET] [req:2100d422] Consulta de curso CS202 exitosa | IP:127.0.0.1 | User:anon | t:0.0061s
+2025-10-11 21:08:15 [INFO] [continental.edu.pe/soa/matriculas-service] [POST] [req:728f001a] Matrícula creada correctamente: estudiante 72659574, curso CS202 | IP:127.0.0.1 | User:admin | t:0.1776s
+2025-10-11 21:08:45 [INFO] [continental.edu.pe/soa/academico-service] [GET] [req:40d57c5e] Historial académico recuperado 72659574 | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 21:09:22 [INFO] [continental.edu.pe/soa/cursos-service] [GET] [req:c2d8f2a7] Listado de 2 cursos recuperado correctamente | IP:127.0.0.1 | User:admin | t:0.0041s
+2025-10-11 21:10:01 [INFO] [continental.edu.pe/soa/cursos-service] [POST] [req:b586661e] Nuevo curso CS303 - Base de datos registrado correctamente | IP:127.0.0.1 | User:admin | t:0.0108s
+2025-10-11 21:10:38 [INFO] [continental.edu.pe/soa/matriculas-service] [GET] [req:919885e9] 5 matrículas listadas | IP:127.0.0.1 | User:admin | t:0.0148s
+2025-10-11 21:10:41 [INFO] [continental.edu.pe/soa/estudiantes-service] [GET] [req:6a7d1134] Consulta de estudiante 72659574 exitosa | IP:127.0.0.1 | User:anon | t:0.0034s
+2025-10-11 21:10:41 [INFO] [continental.edu.pe/soa/cursos-service] [GET] [req:5bfcbf24] Consulta de curso CS303 exitosa | IP:127.0.0.1 | User:anon | t:0.003s
+2025-10-11 21:10:41 [INFO] [continental.edu.pe/soa/matriculas-service] [POST] [req:3bea4faa] Matrícula creada correctamente: estudiante 72659574, curso CS303 | IP:127.0.0.1 | User:admin | t:0.1517s
+2025-10-11 21:10:56 [INFO] [continental.edu.pe/soa/academico-service] [GET] [req:3bbfac03] Historial académico recuperado 74093841 | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 21:11:07 [INFO] [continental.edu.pe/soa/academico-service] [GET] [req:827affcf] Historial académico recuperado 72659574 | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-11 21:14:22 [INFO] [continental.edu.pe/soa/academico-service] [GET] [req:50cb02db] Historial académico recuperado 74093841 | IP:127.0.0.1 | User:admin | t:Nones
+2025-10-19 11:11:29 [INFO] [-] [-] [req:-] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-19 11:11:29 [INFO] [-] [-] [req:-] [33mPress CTRL+C to quit[0m
+2025-10-19 11:11:29 [INFO] [-] [-] [req:-]  * Restarting with stat
+2025-10-19 11:11:30 [WARNING] [-] [-] [req:-]  * Debugger is active!
+2025-10-19 11:11:30 [INFO] [-] [-] [req:-]  * Debugger PIN: 106-128-815
+2025-10-19 11:15:49 [INFO] [-] [-] [req:-]  * Detected change in 'C:\\Users\\ASUS\\Downloads\\SOA_PHYTON\\soa_matricula\\db.py', reloading
+2025-10-19 11:15:49 [INFO] [-] [-] [req:-]  * Restarting with stat
+2025-10-19 11:15:49 [WARNING] [-] [-] [req:-]  * Debugger is active!
+2025-10-19 11:15:49 [INFO] [-] [-] [req:-]  * Debugger PIN: 106-128-815
+2025-10-19 11:16:10 [INFO] [-] [-] [req:-] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-19 11:16:10 [INFO] [-] [-] [req:-] [33mPress CTRL+C to quit[0m
+2025-10-19 11:16:10 [INFO] [-] [-] [req:-]  * Restarting with stat
+2025-10-19 11:16:10 [WARNING] [-] [-] [req:-]  * Debugger is active!
+2025-10-19 11:16:10 [INFO] [-] [-] [req:-]  * Debugger PIN: 106-128-815
+2025-10-19 11:21:10 [INFO] [-] [-] [req:-] 127.0.0.1 - - [19/Oct/2025 11:21:10] "GET / HTTP/1.1" 200 -
+2025-10-19 11:22:00 [INFO] [-] [-] [req:-] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-19 11:22:00 [INFO] [-] [-] [req:-] [33mPress CTRL+C to quit[0m
+2025-10-19 11:22:00 [INFO] [-] [-] [req:-]  * Restarting with stat
+2025-10-19 11:22:00 [WARNING] [-] [-] [req:-]  * Debugger is active!
+2025-10-19 11:22:00 [INFO] [-] [-] [req:-]  * Debugger PIN: 106-128-815
+2025-10-19 11:24:26 [INFO] [-] [-] [req:-] 127.0.0.1 - - [19/Oct/2025 11:24:26] "[32mGET /api/v1/continental.edu.pe/soa/cursos-service HTTP/1.1[0m" 308 -
+2025-10-19 11:24:30 [ERROR] [continental.edu.pe/soa/cursos-service] [GET] [req:f8d04a59] Error al listar cursos: 2003 (HY000): Can't connect to MySQL server on 'localhost:3307' (10061) | IP:127.0.0.1 | User:anon | t:4.1521s
+2025-10-19 11:24:34 [ERROR] [-] [-] [req:-] [continental.edu.pe/soa/logger][ERROR] Fallo al registrar log: 2003 (HY000): Can't connect to MySQL server on 'localhost:3307' (10061)
+2025-10-19 11:24:34 [INFO] [-] [-] [req:-] 127.0.0.1 - - [19/Oct/2025 11:24:34] "[35m[1mGET /api/v1/continental.edu.pe/soa/cursos-service/ HTTP/1.1[0m" 500 -
+2025-10-19 11:27:51 [INFO] [-] [-] [req:-] 127.0.0.1 - - [19/Oct/2025 11:27:51] "[32mGET /api/v1/continental.edu.pe/soa/cursos-service HTTP/1.1[0m" 308 -
+2025-10-19 11:27:55 [ERROR] [continental.edu.pe/soa/cursos-service] [GET] [req:7fe3e4c9] Error al listar cursos: 2003 (HY000): Can't connect to MySQL server on 'localhost:3307' (10061) | IP:127.0.0.1 | User:anon | t:4.0741s
+2025-10-19 11:27:59 [ERROR] [-] [-] [req:-] [continental.edu.pe/soa/logger][ERROR] Fallo al registrar log: 2003 (HY000): Can't connect to MySQL server on 'localhost:3307' (10061)
+2025-10-19 11:27:59 [INFO] [-] [-] [req:-] 127.0.0.1 - - [19/Oct/2025 11:27:59] "[35m[1mGET /api/v1/continental.edu.pe/soa/cursos-service/ HTTP/1.1[0m" 500 -
+2025-10-19 11:28:24 [INFO] [-] [-] [req:-] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-19 11:28:24 [INFO] [-] [-] [req:-] [33mPress CTRL+C to quit[0m
+2025-10-19 11:28:24 [INFO] [-] [-] [req:-]  * Restarting with stat
+2025-10-19 11:28:24 [WARNING] [-] [-] [req:-]  * Debugger is active!
+2025-10-19 11:28:24 [INFO] [-] [-] [req:-]  * Debugger PIN: 106-128-815
+2025-10-19 11:28:28 [INFO] [-] [-] [req:-] 127.0.0.1 - - [19/Oct/2025 11:28:28] "[32mGET /api/v1/continental.edu.pe/soa/cursos-service HTTP/1.1[0m" 308 -
+2025-10-19 11:28:32 [ERROR] [continental.edu.pe/soa/cursos-service] [GET] [req:d440d1a2] Error al listar cursos: 2003 (HY000): Can't connect to MySQL server on 'localhost:3307' (10061) | IP:127.0.0.1 | User:anon | t:4.1085s
+2025-10-19 11:28:36 [ERROR] [-] [-] [req:-] [continental.edu.pe/soa/logger][ERROR] Fallo al registrar log: 2003 (HY000): Can't connect to MySQL server on 'localhost:3307' (10061)
+2025-10-19 11:28:36 [INFO] [-] [-] [req:-] 127.0.0.1 - - [19/Oct/2025 11:28:36] "[35m[1mGET /api/v1/continental.edu.pe/soa/cursos-service/ HTTP/1.1[0m" 500 -
+2025-10-19 11:30:38 [INFO] [-] [-] [req:-] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-19 11:30:38 [INFO] [-] [-] [req:-] [33mPress CTRL+C to quit[0m
+2025-10-19 11:30:38 [INFO] [-] [-] [req:-]  * Restarting with stat
+2025-10-19 11:30:38 [WARNING] [-] [-] [req:-]  * Debugger is active!
+2025-10-19 11:30:38 [INFO] [-] [-] [req:-]  * Debugger PIN: 106-128-815
+2025-10-19 11:30:51 [INFO] [-] [-] [req:-] 127.0.0.1 - - [19/Oct/2025 11:30:51] "[32mGET /api/v1/continental.edu.pe/soa/cursos-service HTTP/1.1[0m" 308 -
+2025-10-19 11:30:55 [ERROR] [continental.edu.pe/soa/cursos-service] [GET] [req:c315b37f] Error al listar cursos: 2003 (HY000): Can't connect to MySQL server on 'localhost:3307' (10061) | IP:127.0.0.1 | User:anon | t:4.1723s
+2025-10-19 11:30:59 [ERROR] [-] [-] [req:-] [continental.edu.pe/soa/logger][ERROR] Fallo al registrar log: 2003 (HY000): Can't connect to MySQL server on 'localhost:3307' (10061)
+2025-10-19 11:30:59 [INFO] [-] [-] [req:-] 127.0.0.1 - - [19/Oct/2025 11:30:59] "[35m[1mGET /api/v1/continental.edu.pe/soa/cursos-service/ HTTP/1.1[0m" 500 -
+2025-10-19 11:30:59 [ERROR] [app-core] [SERVICE] [req:76100260] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-19 11:31:03 [ERROR] [-] [-] [req:-] [continental.edu.pe/soa/logger][ERROR] Fallo al registrar log: 2003 (HY000): Can't connect to MySQL server on 'localhost:3307' (10061)
+2025-10-19 11:31:03 [INFO] [-] [-] [req:-] 127.0.0.1 - - [19/Oct/2025 11:31:03] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-10-19 11:31:53 [INFO] [-] [-] [req:-]  * Detected change in 'C:\\Users\\ASUS\\Downloads\\SOA_PHYTON\\soa_matricula\\db.py', reloading
+2025-10-19 11:31:53 [INFO] [-] [-] [req:-]  * Restarting with stat
+2025-10-19 11:31:53 [WARNING] [-] [-] [req:-]  * Debugger is active!
+2025-10-19 11:31:53 [INFO] [-] [-] [req:-]  * Debugger PIN: 106-128-815
+2025-10-19 11:32:01 [INFO] [-] [-] [req:-] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-19 11:32:01 [INFO] [-] [-] [req:-] [33mPress CTRL+C to quit[0m
+2025-10-19 11:32:01 [INFO] [-] [-] [req:-]  * Restarting with stat
+2025-10-19 11:32:01 [WARNING] [-] [-] [req:-]  * Debugger is active!
+2025-10-19 11:32:01 [INFO] [-] [-] [req:-]  * Debugger PIN: 106-128-815
+2025-10-19 11:32:04 [INFO] [continental.edu.pe/soa/cursos-service] [GET] [req:a0c6f6dd] Listado de 31 cursos recuperado correctamente | IP:127.0.0.1 | User:anon | t:0.1212s
+2025-10-19 11:32:04 [ERROR] [-] [-] [req:-] [continental.edu.pe/soa/logger][ERROR] Fallo al registrar log: 1054 (42S22): Unknown column 'request_id' in 'field list'
+2025-10-19 11:32:04 [INFO] [-] [-] [req:-] 127.0.0.1 - - [19/Oct/2025 11:32:04] "GET /api/v1/continental.edu.pe/soa/cursos-service/ HTTP/1.1" 200 -
+2025-10-19 11:32:04 [ERROR] [app-core] [SERVICE] [req:8f02ff74] Unhandled: NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again. | IP:127.0.0.1 | User:anon | t:Nones
+2025-10-19 11:32:04 [ERROR] [-] [-] [req:-] [continental.edu.pe/soa/logger][ERROR] Fallo al registrar log: 1054 (42S22): Unknown column 'request_id' in 'field list'
+2025-10-19 11:32:04 [INFO] [-] [-] [req:-] 127.0.0.1 - - [19/Oct/2025 11:32:04] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-10-19 11:32:11 [INFO] [-] [-] [req:-] 127.0.0.1 - - [19/Oct/2025 11:32:11] "[32mGET /api/v1/continental.edu.pe/soa/cursos-service HTTP/1.1[0m" 308 -
+2025-10-19 11:32:11 [INFO] [continental.edu.pe/soa/cursos-service] [GET] [req:33d3107e] Listado de 31 cursos recuperado correctamente | IP:127.0.0.1 | User:anon | t:0.012s
+2025-10-19 11:32:11 [ERROR] [-] [-] [req:-] [continental.edu.pe/soa/logger][ERROR] Fallo al registrar log: 1054 (42S22): Unknown column 'request_id' in 'field list'
+2025-10-19 11:32:11 [INFO] [-] [-] [req:-] 127.0.0.1 - - [19/Oct/2025 11:32:11] "GET /api/v1/continental.edu.pe/soa/cursos-service/ HTTP/1.1" 200 -
