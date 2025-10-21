@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema Académico Continental</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f6fa;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #0056b3;
+            color: white;
+            padding: 15px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .menu {
+            display: inline-block;
+            text-align: left;
+            background: white;
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+        }
+        .menu a {
+            display: block;
+            padding: 10px 0;
+            font-size: 18px;
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .menu a:hover {
+            color: white;
+            background-color: #0056b3;
+            padding-left: 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        footer {
+            margin-top: 60px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Sistema Académico Continental
+    </header>
+
+    <div class="container">
+        <div class="menu">
+            <h2>📚 Módulos del Sistema</h2>
+            <a href="{{ url_for('alumnos_list') }}">👩‍🎓 Gestión de Alumnos</a>
+            <a href="{{ url_for('cursos_list') }}">📘 Gestión de Cursos</a>
+            <a href="#">📝 Matrícula de Cursos</a>
+            <a href="#">⭐ Evaluación de Cursos</a>
+            <a href="#">📊 Reportes de Notas</a>
+            <a href="/api/v1/continental.edu.pe/soa/estudiantes-service/html">Gestión de Alumnos</a>
+            <a href="/api/v1/continental.edu.pe/soa/cursos-service/html">Gestión de Cursos</a>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Universidad Continental - Sistema de Matrícula SOA</p>
+    </footer>
+</body>
+</html>

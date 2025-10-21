@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestión de Alumnos</title>
+</head>
+<body>
+    <h1>Lista de Alumnos</h1>
+    <a href="{{ url_for('alumnos_nuevo') }}">➕ Nuevo Alumno</a>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>ID</th><th>Código</th><th>Nombre</th><th>Correo</th>
+            <th>Carrera</th><th>Ciclo</th><th>Estado</th><th>Acciones</th>
+        </tr>
+        {% for a in alumnos %}
+        <tr>
+            <td>{{ a.id }}</td>
+            <td>{{ a.codigo }}</td>
+            <td>{{ a.nombre }}</td>
+            <td>{{ a.correo }}</td>
+            <td>{{ a.carrera }}</td>
+            <td>{{ a.ciclo }}</td>
+            <td>{{ a.estado }}</td>
+            <td>
+                <a href="{{ url_for('alumnos_eliminar', id=a.id) }}">🗑 Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestión de Cursos</title>
+</head>
+<body>
+    <h1>Lista de Cursos</h1>
+    <a href="{{ url_for('cursos_nuevo') }}">➕ Nuevo Curso</a>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>ID</th><th>Código</th><th>Nombre</th><th>Créditos</th><th>Ciclo</th><th>Acciones</th>
+        </tr>
+        {% for c in cursos %}
+        <tr>
+            <td>{{ c.id }}</td>
+            <td>{{ c.codigo }}</td>
+            <td>{{ c.nombre }}</td>
+            <td>{{ c.creditos }}</td>
+            <td>{{ c.ciclo }}</td>
+            <td>
+                <a href="{{ url_for('cursos_eliminar', id=c.id) }}">🗑 Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
