@@ -14,30 +14,14 @@ SERVICE = "continental.edu.pe/soa/cursos-service"
 # LISTAR CURSOS (GET)
 # ======================================================
 @cursos_bp.route("/", methods=["GET"])
-def get_cursos():
-    inicio = time.time()
-    conn = None
-    try:
-        conn = get_connection()
-        cursor = conn.cursor(dictionary=True)
-        cursor.execute("""
-            SELECT id, codigo, nombre, creditos, ciclo
-            FROM cursos
-            ORDER BY id ASC
-        """)
-        rows = cursor.fetchall()
-
-        log_event(SERVICE, "INFO", "GET",
-                    f"Listado de {len(rows)} cursos recuperado correctamente", inicio)
-        return jsonify({"status": "success", "data": rows}), 200
-    except Exception as e:
-        log_event(SERVICE, "ERROR", "GET",
-                    f"Error al listar cursos: {e}", inicio)
-        return jsonify({"status": "error", "message": "Error al obtener cursos"}), 500
-    finally:
-        if conn:
-            cursor.close()
-            conn.close()
+def listar_cursos():
+    conn = get_connection()
+    cursor = conn.cursor(dictionary=True)
+    cursor.execute("SELECT * FROM cursos")
+    data = cursor.fetchall()
+    cursor.close()
+    conn.close()
+    return jsonify({"status": "success", "data": data})
 
 # ======================================================
 # OBTENER CURSO POR CÓDIGO (GET)
@@ -78,51 +62,28 @@ def get_curso_por_codigo(codigo):
 # ======================================================
 @cursos_bp.route("/", methods=["POST"])
 def create_curso():
-    inicio = time.time()
-    data = request.get_json() or {}
+    data = request.get_json()
     nombre = data.get("nombre")
     codigo = data.get("codigo")
     creditos = data.get("creditos")
     ciclo = data.get("ciclo")
 
-    # Validaciones de campos
-    if not all([nombre, codigo, creditos, ciclo]):
-        log_event(SERVICE, "WARNING", "POST",
-                    "Campos obligatorios faltantes", inicio)
-        return jsonify({"status": "error", "message": "Faltan campos obligatorios"}), 400
-
-    try:
-        creditos = int(creditos)
-    except ValueError:
-        log_event(SERVICE, "WARNING", "POST",
-                    f"Créditos inválidos para curso {codigo}", inicio)
-        return jsonify({"status": "error", "message": "Créditos inválidos"}), 400
+    if not nombre or not codigo or not creditos or not ciclo:
+        return jsonify({"error": "Todos los campos son obligatorios"}), 400
 
     conn = None
     try:
         conn = get_connection()
         cursor = conn.cursor()
-
-        # Validar duplicado de código
-        cursor.execute("SELECT COUNT(*) FROM cursos WHERE codigo=%s", (codigo,))
-        if cursor.fetchone()[0] > 0:
-            log_event(SERVICE, "WARNING", "POST",
-                        f"Código duplicado: {codigo}", inicio)
-            return jsonify({"status": "error", "message": f"Código duplicado: {codigo}"}), 400
-
-        cursor.execute("""
-            INSERT INTO cursos (nombre, codigo, creditos, ciclo)
-            VALUES (%s, %s, %s, %s)
-        """, (nombre, codigo, creditos, ciclo))
+        query = "INSERT INTO cursos (codigo, nombre, creditos, ciclo) VALUES (%s, %s, %s, %s)"
+        cursor.execute(query, (codigo, nombre, creditos, ciclo))
         conn.commit()
-
-        log_event(SERVICE, "INFO", "POST",
-                    f"Nuevo curso {codigo} - {nombre} registrado correctamente", inicio)
-        return jsonify({"status": "success", "message": "Curso creado correctamente"}), 201
+        print("✅ Curso guardado correctamente:", codigo, nombre, creditos, ciclo)
+        return jsonify({"mensaje": "Curso agregado exitosamente"}), 201
     except Exception as e:
-        log_event(SERVICE, "ERROR", "POST",
-                    f"Error al crear curso {codigo}: {e}", inicio)
-        return jsonify({"status": "error", "message": "Error al crear curso"}), 500
+        import traceback
+        traceback.print_exc()
+        return jsonify({"error": str(e)}), 500
     finally:
         if conn:
             cursor.close()

@@ -14,31 +14,14 @@ SERVICE = "continental.edu.pe/soa/estudiantes-service"
 # LISTAR ESTUDIANTES (GET)
 # ======================================================
 @estudiantes_bp.route("/", methods=["GET"])
-def get_estudiantes():
-    inicio = time.time()
-    conn = None
-    try:
-        conn = get_connection()
-        cursor = conn.cursor(dictionary=True)
-        cursor.execute("""
-            SELECT id, codigo, nombre, carrera, ciclo, correo, estado
-            FROM estudiantes
-            ORDER BY id ASC
-        """)
-        rows = cursor.fetchall()
-
-        log_event(SERVICE, "INFO", "GET",
-                    f"Listado de {len(rows)} estudiantes recuperado correctamente",
-                    inicio)
-        return jsonify({"status": "success", "data": rows}), 200
-    except Exception as e:
-        log_event(SERVICE, "ERROR", "GET",
-                    f"Error al listar estudiantes: {e}", inicio)
-        return jsonify({"status": "error", "message": "Error al obtener estudiantes"}), 500
-    finally:
-        if conn:
-            cursor.close()
-            conn.close()
+def listar_estudiantes():
+    conn = get_connection()
+    cursor = conn.cursor(dictionary=True)
+    cursor.execute("SELECT * FROM estudiantes")
+    data = cursor.fetchall()
+    cursor.close()
+    conn.close()
+    return jsonify({"status": "success", "data": data})
 
 # ======================================================
 # CONSULTAR POR CÓDIGO (GET)

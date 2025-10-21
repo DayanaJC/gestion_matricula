@@ -81,6 +81,35 @@ def cursos_eliminar(id):
     return redirect(url_for("cursos_list"))
 
 # -------------------------
+# INTERFAZ WEB: Matrículas
+# -------------------------
+@app.route("/matriculas")
+def matriculas_list():
+    """Mostrar la tabla de matrículas"""
+    resp = requests.get(f"{BASE_URL}/matriculas-service/listar")
+    matriculas = resp.json() if resp.status_code == 200 else []
+    return render_template("matriculas.html", matriculas=matriculas)
+
+@app.route("/matriculas/nuevo", methods=["GET", "POST"])
+def matriculas_nuevo():
+    """Formulario para registrar matrículas"""
+    # Obtener estudiantes y cursos desde las APIs
+    resp_est = requests.get(f"{BASE_URL}/estudiantes-service/")
+    resp_cur = requests.get(f"{BASE_URL}/cursos-service/")
+    estudiantes = resp_est.json().get("data", []) if resp_est.status_code == 200 else []
+    cursos = resp_cur.json().get("data", []) if resp_cur.status_code == 200 else []
+
+    if request.method == "POST":
+        data = {
+            "estudiante_id": request.form["estudiante_id"],
+            "curso_id": request.form["curso_id"]
+        }
+        requests.post(f"{BASE_URL}/matriculas-service/", json=data)
+        return redirect(url_for("matriculas_list"))
+
+    return render_template("matricula_form.html", estudiantes=estudiantes, cursos=cursos)
+
+# -------------------------
 # Logging y errores
 # -------------------------
 @app.errorhandler(Exception)

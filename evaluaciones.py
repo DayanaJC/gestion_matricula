@@ -5,19 +5,62 @@ from logger import log_event
 import requests, time
 
 # ======================================================
-# CONFIGURACIÓN BASE
-# ======================================================
 evaluaciones_bp = Blueprint("evaluaciones", __name__)
 SERVICE = "continental.edu.pe/soa/evaluaciones-service"
 
-# Endpoints SOA reales (coherentes con tu app.py)
 SERVICIO_ESTUDIANTES = "http://127.0.0.1:5000/api/v1/continental.edu.pe/soa/estudiantes-service"
 SERVICIO_CURSOS = "http://127.0.0.1:5000/api/v1/continental.edu.pe/soa/cursos-service"
 SERVICIO_MATRICULAS = "http://127.0.0.1:5000/api/v1/continental.edu.pe/soa/matriculas-service"
 
-# ======================================================
-# LISTAR TODAS LAS EVALUACIONES (GET)
-# ======================================================
+# helper para siguiente ciclo
+CICLOS = ["I","II","III","IV","V","VI","VII","VIII","IX","X"]
+
+def siguiente_ciclo(ciclo_actual):
+    try:
+        idx = CICLOS.index(ciclo_actual)
+        if idx < len(CICLOS) - 1:
+            return CICLOS[idx + 1]
+    except ValueError:
+        pass
+    return ciclo_actual  # si no se reconoce, mantener
+
+def puede_promover(estudiante_id, ciclo_actual):
+    """
+    Verifica que todos los cursos del estudiante en ciclo_actual
+    estén aprobados (nota >= 11).
+    """
+    conn = get_connection()
+    cur = conn.cursor(dictionary=True)
+    try:
+        # obtener todas las matrículas del estudiante para cursos del ciclo_actual
+        cur.execute("""
+            SELECT m.id AS matricula_id, c.id AS curso_id
+            FROM matriculas m
+            JOIN cursos c ON m.curso_id = c.id
+            WHERE m.estudiante_id = %s AND c.ciclo = %s
+        """, (estudiante_id, ciclo_actual))
+        filas = cur.fetchall()
+        if not filas:
+            return False  # si no está matriculado en cursos de ese ciclo, no promovemos
+
+        # por cada curso verificar si tiene evaluación aprobatoria
+        for f in filas:
+            cur.execute("""
+                SELECT nota FROM evaluaciones
+                WHERE estudiante_id = %s AND curso_id = %s
+                ORDER BY fecha DESC LIMIT 1
+            """, (estudiante_id, f["curso_id"]))
+            ev = cur.fetchone()
+            if not ev or ev.get("nota", 0) < 11:
+                return False
+        return True
+    finally:
+        cur.close()
+        conn.close()
+
+# =========================
+# LISTAR EVALUACIONES (GET)
+# =========================
 @evaluaciones_bp.route("/", methods=["GET"])
 def get_evaluaciones():
     inicio = time.time()
@@ -40,19 +83,19 @@ def get_evaluaciones():
             ORDER BY ev.id ASC
         """)
         data = cursor.fetchall()
-        log_event("evaluaciones-service", "INFO", "GET", f"{len(data)} evaluaciones listadas", inicio)
+        log_event(SERVICE, "INFO", "GET", f"{len(data)} evaluaciones listadas", inicio)
         return jsonify({"status": "success", "data": data}), 200
     except Exception as e:
-        log_event("evaluaciones-service", "ERROR", "GET", f"Error al listar evaluaciones: {e}", inicio)
+        log_event(SERVICE, "ERROR", "GET", f"Error al listar evaluaciones: {e}", inicio)
         return jsonify({"status": "error", "message": str(e)}), 500
     finally:
         if conn:
             cursor.close()
             conn.close()
 
-# ======================================================
-# REGISTRAR NUEVA EVALUACIÓN (POST)
-# ======================================================
+# =========================
+# AGREGAR EVALUACIÓN (POST)
+# =========================
 @evaluaciones_bp.route("/", methods=["POST"])
 def add_evaluacion():
     inicio = time.time()
@@ -62,7 +105,7 @@ def add_evaluacion():
     nota = datos.get("nota")
 
     if not codigo_estudiante or not codigo_curso or nota is None:
-        log_event("evaluaciones-service", "WARNING", "POST", "Datos incompletos para registrar evaluación", inicio)
+        log_event(SERVICE, "WARNING", "POST", "Datos incompletos para registrar evaluación", inicio)
         return jsonify({"status": "error", "message": "Faltan datos obligatorios"}), 400
 
     try:
@@ -73,7 +116,7 @@ def add_evaluacion():
         return jsonify({"status": "error", "message": "Nota inválida"}), 400
 
     try:
-        # Consultar servicios externos (estudiantes y cursos)
+        # Validar existencia estudiante y curso
         est_resp = requests.get(f"{SERVICIO_ESTUDIANTES}/codigo/{codigo_estudiante}", timeout=5)
         cur_resp = requests.get(f"{SERVICIO_CURSOS}/codigo/{codigo_curso}", timeout=5)
 
@@ -91,33 +134,56 @@ def add_evaluacion():
         if not est_id or not cur_id:
             return jsonify({"status": "error", "message": "Datos inválidos desde servicios externos"}), 500
 
-        # Insertar evaluación
+        # Verificar que el estudiante esté matriculado en ese curso (evita insertar evaluaciones no matriculadas)
         conn = get_connection()
-        cursor = conn.cursor()
+        cursor = conn.cursor(dictionary=True)
+        cursor.execute("""
+            SELECT id FROM matriculas WHERE estudiante_id=%s AND curso_id=%s
+        """, (est_id, cur_id))
+        mat = cursor.fetchone()
+        if not mat:
+            return jsonify({"status": "error", "message": "El estudiante no está matriculado en ese curso"}), 400
+
+        # Insertar/Registrar evaluación (permitimos múltiples evaluaciones, tomamos la última para aprobación)
         cursor.execute("""
             INSERT INTO evaluaciones (estudiante_id, curso_id, nota)
             VALUES (%s, %s, %s)
         """, (est_id, cur_id, nota))
         conn.commit()
 
-        log_event("evaluaciones-service", "INFO", "POST",
+        log_event(SERVICE, "INFO", "POST",
                     f"Evaluación registrada estudiante {codigo_estudiante}, curso {codigo_curso}, nota {nota}", inicio)
+
+        # Después de registrar, verificar promoción
+        estudiante_ciclo = est_data.get("ciclo")
+        try:
+            if puede_promover(est_id, estudiante_ciclo):
+                nuevo = siguiente_ciclo(estudiante_ciclo)
+                if nuevo != estudiante_ciclo:
+                    cursor.execute("UPDATE estudiantes SET ciclo=%s WHERE id=%s", (nuevo, est_id))
+                    conn.commit()
+                    log_event(SERVICE, "INFO", "SERVICE",
+                              f"Estudiante {codigo_estudiante} promovido {estudiante_ciclo} -> {nuevo}", inicio)
+        except Exception as e_prom:
+            # no impedir el registro si falla la verificación de promoción
+            log_event(SERVICE, "ERROR", "SERVICE", f"Error al verificar/promover: {e_prom}", inicio)
+
         return jsonify({"status": "success", "message": "Evaluación registrada correctamente"}), 201
 
     except requests.exceptions.RequestException as e:
-        log_event("evaluaciones-service", "ERROR", "POST", f"Error comunicando con servicios externos: {e}", inicio)
+        log_event(SERVICE, "ERROR", "POST", f"Error comunicando con servicios externos: {e}", inicio)
         return jsonify({"status": "error", "message": "Error de comunicación con servicios externos"}), 500
     except Exception as e:
-        log_event("evaluaciones-service", "ERROR", "POST", f"Error general al registrar evaluación: {e}", inicio)
+        log_event(SERVICE, "ERROR", "POST", f"Error general al registrar evaluación: {e}", inicio)
         return jsonify({"status": "error", "message": str(e)}), 500
     finally:
         if 'conn' in locals() and conn:
             cursor.close()
             conn.close()
 
-# ======================================================
+# =========================
 # ACTUALIZAR NOTA (PUT)
-# ======================================================
+# =========================
 @evaluaciones_bp.route("/<int:id>", methods=["PUT"])
 def update_evaluacion(id):
     inicio = time.time()
@@ -137,26 +203,45 @@ def update_evaluacion(id):
     conn = None
     try:
         conn = get_connection()
-        cursor = conn.cursor()
+        cursor = conn.cursor(dictionary=True)
+
+        # obtener ids (estudiante_id, curso_id) antes de actualizar para poder verificar promoción
+        cursor.execute("SELECT estudiante_id, curso_id FROM evaluaciones WHERE id=%s", (id,))
+        ev_old = cursor.fetchone()
+        if not ev_old:
+            return jsonify({"status": "error", "message": "Evaluación no encontrada"}), 404
+
         cursor.execute("UPDATE evaluaciones SET nota=%s WHERE id=%s", (nota, id))
         conn.commit()
 
-        if cursor.rowcount == 0:
-            return jsonify({"status": "error", "message": "Evaluación no encontrada"}), 404
+        log_event(SERVICE, "INFO", "PUT", f"Evaluación {id} actualizada a nota {nota}", inicio)
 
-        log_event("evaluaciones-service", "INFO", "PUT", f"Evaluación {id} actualizada a nota {nota}", inicio)
+        # verificar promoción si corresponde (usar datos del estudiante)
+        est_id = ev_old["estudiante_id"]
+        cursor.execute("SELECT ciclo, codigo FROM estudiantes WHERE id=%s", (est_id,))
+        est = cursor.fetchone()
+        if est:
+            estudiante_ciclo = est["ciclo"]
+            if puede_promover(est_id, estudiante_ciclo):
+                nuevo = siguiente_ciclo(estudiante_ciclo)
+                if nuevo != estudiante_ciclo:
+                    cursor.execute("UPDATE estudiantes SET ciclo=%s WHERE id=%s", (nuevo, est_id))
+                    conn.commit()
+                    log_event(SERVICE, "INFO", "SERVICE",
+                              f"Estudiante {est.get('codigo','?')} promovido {estudiante_ciclo} -> {nuevo}", inicio)
+
         return jsonify({"status": "success", "message": "Evaluación actualizada correctamente"}), 200
     except Exception as e:
-        log_event("evaluaciones-service", "ERROR", "PUT", f"Error al actualizar evaluación: {e}", inicio)
+        log_event(SERVICE, "ERROR", "PUT", f"Error al actualizar evaluación: {e}", inicio)
         return jsonify({"status": "error", "message": str(e)}), 500
     finally:
         if conn:
             cursor.close()
             conn.close()
 
-# ======================================================
-# CONSULTAR RESUMEN DEL PROGRESO ACADÉMICO
-# ======================================================
+# =========================
+# RESUMEN DEL PROGRESO (GET)
+# =========================
 @evaluaciones_bp.route("/resumen/<int:codigo_estudiante>", methods=["GET"])
 def resumen_estudiante(codigo_estudiante):
     inicio = time.time()
@@ -197,10 +282,10 @@ def resumen_estudiante(codigo_estudiante):
             "progreso_academico": progreso
         }
 
-        log_event("evaluaciones-service", "INFO", "GET", f"Resumen académico de estudiante {codigo_estudiante}", inicio)
+        log_event(SERVICE, "INFO", "GET", f"Resumen académico de estudiante {codigo_estudiante}", inicio)
         return jsonify(resumen), 200
     except Exception as e:
-        log_event("evaluaciones-service", "ERROR", "GET", f"Error al obtener resumen académico: {e}", inicio)
+        log_event(SERVICE, "ERROR", "GET", f"Error al obtener resumen académico: {e}", inicio)
         return jsonify({"status": "error", "message": str(e)}), 500
     finally:
         if conn:

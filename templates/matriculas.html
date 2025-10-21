@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Matrículas</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<h1>📝 Registro de Matrículas</h1>
+
+<form id="formMatricula">
+  <label>Estudiante:</label>
+  <select id="alumno" class="form-select" required>
+    <option value="">Seleccione un alumno</option>
+  </select>
+
+  <label>Curso:</label>
+  <select id="curso" class="form-select" required>
+    <option value="">Seleccione un curso</option>
+  </select>
+
+  <button type="submit">Matricular</button>
+</form>
+
+<hr>
+
+<h2>📋 Lista de Matrículas</h2>
+<table border="1" id="tablaMatriculas">
+  <thead>
+    <tr><th>ID</th><th>Estudiante</th><th>Curso</th><th>Fecha</th><th>Estado</th></tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<script>
+$(document).ready(function() {
+  let alumnos = [];
+  let cursos = [];
+
+  // Cargar alumnos
+  async function cargarAlumnos() {
+    const res = await fetch("/api/v1/continental.edu.pe/soa/estudiantes-service/");
+    const data = await res.json();
+    alumnos = data.data || data;
+    const select = $("#alumno");
+    select.empty().append('<option value="">Seleccione un alumno</option>');
+    alumnos.forEach(a => {
+      select.append(`<option value="${a.id}" data-ciclo="${a.ciclo}">${a.nombre} - ${a.carrera} (Ciclo ${a.ciclo})</option>`);
+    });
+  }
+
+  // Cargar cursos
+  async function cargarCursos() {
+    const res = await fetch("/api/v1/continental.edu.pe/soa/cursos-service/");
+    const data = await res.json();
+    cursos = data.data || data;
+  }
+
+  // Filtrar cursos según el ciclo del alumno
+  $("#alumno").change(function() {
+    const ciclo = $("#alumno option:selected").data("ciclo");
+    if (!ciclo) return;
+    const cursosFiltrados = cursos.filter(c => c.ciclo == ciclo);
+    const selectCurso = $("#curso");
+    selectCurso.empty().append('<option value="">Seleccione un curso</option>');
+    cursosFiltrados.forEach(c => {
+      selectCurso.append(`<option value="${c.id}">${c.nombre} (Ciclo ${c.ciclo})</option>`);
+    });
+  });
+
+  // Enviar matrícula
+  $("#formMatricula").submit(async function(e) {
+    e.preventDefault();
+    const estudiante_id = $("#alumno").val();
+    const curso_id = $("#curso").val();
+
+    const res = await fetch("/api/v1/continental.edu.pe/soa/matriculas-service/", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ estudiante_id, curso_id })
+    });
+    const result = await res.json();
+    alert(result.message || result.error);
+    if (result.status === "success") {
+      $("#formMatricula")[0].reset();
+      listar();
+    }
+  });
+
+  // Listar matrículas
+  function listar() {
+    $.getJSON("/api/v1/continental.edu.pe/soa/matriculas-service/listar", function(data) {
+      const tbody = $("#tablaMatriculas tbody");
+      tbody.empty();
+      data.forEach(m => {
+        tbody.append(`<tr>
+          <td>${m.id}</td><td>${m.estudiante}</td><td>${m.curso}</td><td>${m.fecha}</td><td>${m.estado}</td>
+        </tr>`);
+      });
+    });
+  }
+
+  // Inicializar
+  cargarAlumnos();
+  cargarCursos();
+  listar();
+});
+</script>
+</body>
+</html>

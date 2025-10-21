@@ -2,78 +2,98 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar Curso</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="container mt-5">
-    <h2>Registrar Nuevo Curso</h2>
-    <form id="formCurso">
-        <div class="mb-3">
-            <label class="form-label">Código</label>
-            <input type="text" class="form-control" id="codigo" required>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <div class="card shadow-lg">
+            <div class="card-header bg-primary text-white text-center">
+                <h3>Formulario de Registro de Curso</h3>
+            </div>
+            <div class="card-body">
+                <form id="form-curso">
+                    <div class="mb-3">
+                        <label for="codigo" class="form-label">Código del Curso</label>
+                        <input type="text" id="codigo" class="form-control" placeholder="Ejemplo: INF101" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre del Curso</label>
+                        <input type="text" id="nombre" class="form-control" placeholder="Ejemplo: Introducción a la Programación" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="creditos" class="form-label">Créditos</label>
+                        <input type="number" id="creditos" class="form-control" min="1" max="6" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="ciclo" class="form-label">Ciclo</label>
+                        <select id="ciclo" class="form-select" required>
+                            <option value="">-- Selecciona un ciclo --</option>
+                            <option value="I">I</option>
+                            <option value="II">II</option>
+                            <option value="III">III</option>
+                            <option value="IV">IV</option>
+                            <option value="V">V</option>
+                            <option value="VI">VI</option>
+                            <option value="VII">VII</option>
+                            <option value="VIII">VIII</option>
+                            <option value="IX">IX</option>
+                            <option value="X">X</option>
+                        </select>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-success btn-lg">Guardar Curso</button>
+                    </div>
+                </form>
+            </div>
         </div>
 
-        <div class="mb-3">
-            <label class="form-label">Nombre del Curso</label>
-            <input type="text" class="form-control" id="nombre" required>
+        <div class="text-center mt-3">
+            <a href="/" class="btn btn-secondary">Volver al inicio</a>
         </div>
+    </div>
 
-        <div class="mb-3">
-            <label class="form-label">Carrera</label>
-            <select class="form-select" id="carrera" required>
-                <option value="">Seleccione la carrera</option>
-                <option value="Ingeniería de Sistemas">Ingeniería de Sistemas</option>
-                <option value="Ingeniería Civil">Ingeniería Civil</option>
-                <option value="Administración">Administración</option>
-                <option value="Contabilidad">Contabilidad</option>
-                <option value="Derecho">Derecho</option>
-                <option value="Arquitectura">Arquitectura</option>
-                <option value="Psicología">Psicología</option>
-            </select>
-        </div>
-
-        <div class="mb-3">
-            <label class="form-label">Ciclo</label>
-            <select class="form-select" id="ciclo" required>
-                <option value="">Seleccione el ciclo</option>
-                <option value="I">I</option>
-                <option value="II">II</option>
-                <option value="III">III</option>
-                <option value="IV">IV</option>
-                <option value="V">V</option>
-                <option value="VI">VI</option>
-                <option value="VII">VII</option>
-                <option value="VIII">VIII</option>
-                <option value="IX">IX</option>
-                <option value="X">X</option>
-            </select>
-        </div>
-
-        <button type="submit" class="btn btn-primary">Guardar</button>
-        <a href="/cursos" class="btn btn-secondary">Volver</a>
-    </form>
-
+    <!-- SCRIPT DE ENVÍO -->
     <script>
-        document.getElementById("formCurso").addEventListener("submit", async (e) => {
-            e.preventDefault();
-            
-            const data = {
-                codigo: document.getElementById("codigo").value,
-                nombre: document.getElementById("nombre").value,
-                carrera: document.getElementById("carrera").value,
-                ciclo: document.getElementById("ciclo").value
-            };
+    document.getElementById("form-curso").addEventListener("submit", async function(e) {
+        e.preventDefault();
 
+        const codigo = document.getElementById("codigo").value.trim();
+        const nombre = document.getElementById("nombre").value.trim();
+        const creditos = document.getElementById("creditos").value.trim();
+        const ciclo = document.getElementById("ciclo").value;
+
+        if (!codigo || !nombre || !creditos || !ciclo) {
+            alert("Por favor, completa todos los campos.");
+            return;
+        }
+
+        try {
             const response = await fetch("/api/v1/continental.edu.pe/soa/cursos-service/", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(data)
+                body: JSON.stringify({ codigo, nombre, creditos, ciclo })
             });
 
             const result = await response.json();
-            alert(result.message);
-            if (result.status === "success") window.location.href = "/cursos";
-        });
+            alert(result.mensaje || result.error);
+
+            if (response.ok) {
+                document.getElementById("form-curso").reset();
+            }
+
+        } catch (error) {
+            console.error("Error al enviar:", error);
+            alert("Error de conexión con el servidor.");
+        }
+    });
     </script>
+
 </body>
 </html>
