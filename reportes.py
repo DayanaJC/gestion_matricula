@@ -12,7 +12,7 @@ def reporte_evaluaciones():
     conn = get_connection()
     cursor = conn.cursor(dictionary=True)
 
-    # 🔹 Obtener lista de alumnos para el selector
+    # 🔹 Obtener lis2ta de alumnos para el selector
     cursor.execute("SELECT id, nombre FROM estudiantes")
     alumnos = cursor.fetchall()
 
