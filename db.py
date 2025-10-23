@@ -4,7 +4,7 @@ from mysql.connector import Error
 DB_CONFIG = {
     "host": "localhost",
     "user": "root",
-    "password": "BaguiraLluvia23",        # pon tu contraseña si tienes
+    "password": "123456",        # pon tu contraseña si tienes
     "database": "gestion_matricula",
     "port": 3306
 }

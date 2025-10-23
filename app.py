@@ -5,8 +5,14 @@ from cursos import cursos_bp
 from matriculas import matriculas_bp
 from academico import academico_bp
 from evaluaciones import evaluaciones_bp
+from reportes import reportes_bp
 from logger import log_event
 import requests, time
+
+
+
+
+
 
 app = Flask(__name__)
 
@@ -16,7 +22,7 @@ app.register_blueprint(cursos_bp, url_prefix="/api/v1/continental.edu.pe/soa/cur
 app.register_blueprint(matriculas_bp, url_prefix="/api/v1/continental.edu.pe/soa/matriculas-service")
 app.register_blueprint(academico_bp, url_prefix="/api/v1/continental.edu.pe/soa/academico-service")
 app.register_blueprint(evaluaciones_bp, url_prefix="/api/v1/continental.edu.pe/soa/evaluaciones-service")
-
+app.register_blueprint(reportes_bp)
 # Rutas de la interfaz web ----------------------------
 BASE_URL = "http://127.0.0.1:5000/api/v1/continental.edu.pe/soa"
 
@@ -108,6 +114,45 @@ def matriculas_nuevo():
         return redirect(url_for("matriculas_list"))
 
     return render_template("matricula_form.html", estudiantes=estudiantes, cursos=cursos)
+
+# -------------------------
+# INTERFAZ WEB: Evaluaciones
+# -------------------------
+@app.route("/evaluaciones")
+def evaluaciones_list():
+    # Llamamos directamente al blueprint que lista evaluaciones para la web
+    # La idea es obtener un listado simple de registros
+    try:
+        resp = requests.get(f"{BASE_URL}/evaluaciones-service/")
+        evaluaciones = resp.json().get("data", []) if resp.status_code == 200 else []
+    except Exception as e:
+        evaluaciones = []
+    return render_template("evaluaciones.html", evaluaciones=evaluaciones)
+
+@app.route("/evaluaciones/nueva", methods=["GET", "POST"])
+def evaluaciones_nueva():
+    # Obtener estudiantes y cursos (igual que en matriculas/cursos)
+    resp_est = requests.get(f"{BASE_URL}/estudiantes-service/")
+    resp_cur = requests.get(f"{BASE_URL}/cursos-service/")
+    estudiantes = resp_est.json().get("data", []) if resp_est.status_code == 200 else []
+    cursos = resp_cur.json().get("data", []) if resp_cur.status_code == 200 else []
+
+    if request.method == "POST":
+        # En el form enviaremos codigo_estudiante y codigo_curso (igual que tu API espera)
+        data = {
+            "codigo_estudiante": request.form["codigo_estudiante"],
+            "codigo_curso": request.form["codigo_curso"],
+            "nota": request.form["nota"]
+        }
+        # Llamada al servicio API interno
+        requests.post(f"{BASE_URL}/evaluaciones-service/", json=data)
+        return redirect(url_for("evaluaciones_list"))
+
+    return render_template("evaluacion_form.html", estudiantes=estudiantes, cursos=cursos)
+
+# -------------------------
+# INTERFAZ WEB: reporte_evaluaciones
+# -------------------------
 
 # -------------------------
 # Logging y errores

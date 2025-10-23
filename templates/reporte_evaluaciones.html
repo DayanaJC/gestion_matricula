@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>📊 Reporte de Evaluaciones</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f4f9;
+    text-align: center;
+    padding: 40px;
+}
+select, button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+table {
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+th {
+    background-color: #007bff;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+}
+</style>
+</head>
+<body>
+<h1>📊 Reporte de Evaluaciones</h1>
+
+<form method="POST">
+    <label for="alumno_id">Seleccionar alumno:</label>
+    <select name="alumno_id" required>
+        <option value="">-- Selecciona un alumno --</option>
+        {% for alumno in alumnos %}
+        <option value="{{ alumno.id }}" {% if alumno.id|string == alumno_seleccionado %}selected{% endif %}>{{ alumno.nombre }}</option>
+        {% endfor %}
+    </select>
+    <br>
+
+    <label for="opcion">Tipo de reporte:</label>
+    <select name="opcion" required>
+        <option value="3_ultimos" {% if opcion == "3_ultimos" %}selected{% endif %}>Notas de los 3 últimos ciclos</option>
+        <option value="ultimo" {% if opcion == "ultimo" %}selected{% endif %}>Notas del último ciclo</option>
+        <option value="general" {% if opcion == "general" %}selected{% endif %}>Reporte general por ciclo</option>
+    </select>
+
+    <button type="submit">Mostrar</button>
+</form>
+
+{% if mensaje %}
+<p>{{ mensaje }}</p>
+{% endif %}
+
+{% if notas %}
+<table>
+    <tr>
+        <th>Ciclo</th>
+        <th>Código del Curso</th>
+        <th>Nombre del Curso</th>
+        <th>Nota</th>
+    </tr>
+    {% for n in notas %}
+    <tr>
+        <td>{{ n.ciclo }}</td>
+        <td>{{ n.codigo }}</td>
+        <td>{{ n.curso }}</td>
+        <td>{{ n.nota }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endif %}
+
+<a href="/">🏠 Volver al inicio</a>
+</body>
+</html>
